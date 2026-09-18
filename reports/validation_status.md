@@ -18,7 +18,7 @@ Verified locally using Python 3.12.14, pinned direct dependencies, macOS and a t
 | Notebook verification | All six notebooks executed successfully; 12 code cells, no error outputs; see notebook_validation.json |
 | Real Kaggle sample/full | Pending: source files were not supplied or downloaded |
 | Power BI Desktop / DAX / PBIX | Specifications supplied; native execution and six-page screenshots remain pending |
-| GitHub CI | Workflow provided, not executed on GitHub or published |
+| GitHub CI | Inactive template provided at docs/github-actions-ci.yml.example; future automated runs were not enabled |
 
 No fixture result is a finding about Walmart or DataCo. Full-mode code was exercised on synthetic data, not at complete M5 scale. Historical replay costs are scenario estimates, not achieved savings.
 

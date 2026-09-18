@@ -102,3 +102,6 @@ Obtain real stock/PO/cost/lead-time feeds, use availability-adjusted demand, ext
 
 ## Portfolio and interviews
 Use docs/project_walkthrough.md, docs/interview_prep.md and docs/resume_bullets.md. Claim what you actually ran and built. Replace metric placeholders only with real executed source results. Do not upload raw Kaggle files; .gitignore excludes raw and generated analytical folders and secrets. To publish code, initialize a private/local Git repository, review staged files, then add your own GitHub remote; the project repository is https://github.com/madhurag123/retail-supply-chain-control-tower.
+
+## Optional GitHub automated checks
+The inactive template is `docs/github-actions-ci.yml.example`. Automatic CI is not enabled. To enable it deliberately, copy the template to `.github/workflows/ci.yml` and commit it; it runs the fixture pipeline and PostgreSQL tests on pushes and pull requests. GitHub Actions usage is subject to your account limits.
