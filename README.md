@@ -5,6 +5,32 @@ An executable portfolio project for data, BI, supply-chain, operations and junio
 
 **Delivery status:** Repository, Python pipeline, PostgreSQL schemas/marts, SQL analyses, notebooks, tests, Power BI specifications and interview materials are included. The source Kaggle datasets were not supplied. Included executed results use a deterministic **synthetic fixture**, never real Walmart/DataCo findings. See reports/validation_status.md for exact executed checks. A native `.pbix` has not been created or validated.
 
+## Start here
+
+**Portfolio status: primary project in development.** The synthetic demo is implemented; a complete source-data case study and native Power BI report are still pending.
+
+| Review goal | Where to go |
+| --- | --- |
+| Understand the problem and design | [Project walkthrough](docs/project_walkthrough.md) · [Architecture](docs/architecture.md) |
+| Review recorded execution evidence | [Validation status](reports/validation_status.md) |
+| Run the project locally | [Installation](#installation) · [Synthetic demo](#run-the-self-contained-integration-demo) |
+| Understand data and analytical caveats | [Data dictionary](docs/data_dictionary.md) · [Methodology](reports/methodology.md) · [Limitations](reports/assumptions_and_limitations.md) |
+| Choose the next task | [Portfolio & Project Delivery board](https://github.com/users/madhurag123/projects/1) (private) |
+
+### Implemented and pending
+
+- **Recorded as executed on synthetic data:** sample pipeline, 19 Python/PostgreSQL tests, 28 SQL analyses, and six notebooks. See the validation report for environment and scope; these are prior recorded checks, not a new run from this documentation update.
+- **Pending:** real Kaggle sample/full validation, full-scale runtime measurements, native Power BI/DAX reconciliation and screenshots, and automated CI.
+- **Known analytical limitation:** held-out forecast interval coverage is below nominal targets; calibration needs improvement.
+- **Demo access:** the runnable demonstration is local and synthetic. There is no verified public hosted demo. This repository and its documentation currently require authorized access.
+
+### Next milestones
+
+1. Reproduce the fixture installation from a clean environment and record exact Python, operating-system and database versions.
+2. Obtain the source datasets under their terms, run the real sample without skipping audits, and record metrics with provenance.
+3. Build the six-page Power BI report on Windows, reconcile its measures to the exports, and capture screenshots.
+4. Benchmark the full dataset and investigate interval calibration before presenting the project as a completed flagship case study.
+
 ## Business problem and objectives
 A multi-state retailer wants to reduce stockouts and excess stock, anticipate 28-day sales, understand demand variation and inspect delivery and profit leakage. The VP of Supply Chain, inventory planner, logistics manager, store operations manager and finance manager need consistent grains, denominators and uncertainty. This project forecasts item-store demand, derives configurable inventory policies, compares replenishment scenarios and examines independent logistics performance. It does not promise operational savings without deployment evidence.
 
@@ -36,6 +62,14 @@ Python 3.11+; Pandas/NumPy; DuckDB and Parquet; PostgreSQL with SQLAlchemy/psyco
 See docs/repository_tree.txt for the complete tree. The source modules separate ingestion, validation, transformation, forecasting, inventory and operations. SQL files 00–09 create and validate the dimensional serving model; interview_queries.sql contains 28 analytical queries. Six notebooks explore exported outputs. Power BI files contain the model, measure catalogue, theme and six-page design. Reports distinguish actual observations, forecasts and scenario estimates. Docs include architecture, field dictionary, interview answers and resume bullets.
 
 ## Installation
+
+Clone with an account that has access, then run commands from the repository root:
+
+```bash
+git clone https://github.com/madhurag123/retail-supply-chain-control-tower.git
+cd retail-supply-chain-control-tower
+```
+
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
