@@ -1,0 +1,38 @@
+[
+  {
+    "notebook": "01_data_audit.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  },
+  {
+    "notebook": "02_m5_exploratory_analysis.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  },
+  {
+    "notebook": "03_dataco_operations_analysis.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  },
+  {
+    "notebook": "04_demand_forecasting.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  },
+  {
+    "notebook": "05_inventory_optimization.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  },
+  {
+    "notebook": "06_executive_findings.ipynb",
+    "executed_code_cells": 2,
+    "status": "passed",
+    "data_provenance": "synthetic_fixture"
+  }
+]

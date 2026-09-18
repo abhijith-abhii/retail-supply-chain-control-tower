@@ -1,0 +1,12 @@
+{
+  "source_rows": 484,
+  "repeated_order_ids_expected_for_lines": 244,
+  "missing_optional_columns": [],
+  "order_date_invalid": 0,
+  "shipping_date_invalid": 0,
+  "source_late_flag_disagreement": 0,
+  "invalid_sales_rows": 0,
+  "abnormal_profit_rows": 0,
+  "ineligible_delivery_rows": 0,
+  "date_duration_mismatch": 0
+}

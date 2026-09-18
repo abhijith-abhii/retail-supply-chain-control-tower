@@ -1,0 +1,163 @@
+{
+  "filename": "calendar.csv",
+  "rows": 720,
+  "columns": 10,
+  "column_stats": {
+    "date": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": "2015-01-01 00:00:00",
+      "date_max": "2016-12-20 00:00:00",
+      "outliers_iqr_sample": null,
+      "unique_values": 720
+    },
+    "wm_yr_wk": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1000.0,
+      "maximum": 1102.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 103
+    },
+    "d": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 720
+    },
+    "snap_CA": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 480,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 2
+    },
+    "snap_TX": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 480,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 2
+    },
+    "snap_WI": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 480,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 2
+    },
+    "event_name_1": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 708,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "event_type_1": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 708,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "event_name_2": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 720,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 0
+    },
+    "event_type_2": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 720,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 0
+    }
+  },
+  "duplicate_rows": 0,
+  "encoding": "utf-8",
+  "replacement_character_count": 0,
+  "peak_chunk_memory_bytes": 162744,
+  "file_size_bytes": 23336,
+  "outlier_method": "1.5 IQR on first 10,000 rows per numeric column; descriptive screen, not removal"
+}

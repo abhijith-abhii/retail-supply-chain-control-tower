@@ -1,0 +1,9103 @@
+{
+  "filename": "sales_train_evaluation.csv",
+  "rows": 36,
+  "columns": 606,
+  "column_stats": {
+    "id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 36
+    },
+    "item_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 12
+    },
+    "dept_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 3
+    },
+    "cat_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 2
+    },
+    "store_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 3
+    },
+    "state_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 3
+    },
+    "d_1": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 13
+    },
+    "d_2": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_3": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_4": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_5": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_6": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_7": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_8": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_9": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_10": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_11": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_12": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_13": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_14": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_15": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_16": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 10
+    },
+    "d_17": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_18": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_19": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_20": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_21": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_22": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 7
+    },
+    "d_23": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_24": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_25": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_26": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 8
+    },
+    "d_27": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_28": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_29": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_30": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_31": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_32": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_33": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 7
+    },
+    "d_34": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_35": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_36": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_37": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 15.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_38": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_39": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_40": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_41": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_42": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_43": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_44": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_45": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_46": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_47": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_48": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_49": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_50": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_51": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_52": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_53": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_54": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_55": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_56": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_57": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_58": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_59": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_60": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_61": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 13
+    },
+    "d_62": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_63": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_64": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_65": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_66": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_67": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_68": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_69": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_70": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_71": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_72": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_73": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_74": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_75": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_76": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_77": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_78": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_79": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_80": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_81": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_82": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_83": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_84": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_85": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_86": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_87": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_88": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_89": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_90": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_91": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_92": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_93": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_94": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_95": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_96": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_97": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_98": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_99": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_100": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_101": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_102": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_103": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_104": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_105": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_106": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_107": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_108": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_109": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 9
+    },
+    "d_110": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_111": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_112": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_113": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_114": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_115": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_116": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_117": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_118": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_119": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_120": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_121": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_122": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_123": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_124": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_125": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_126": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_127": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_128": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_129": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_130": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_131": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_132": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_133": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_134": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_135": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_136": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_137": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_138": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_139": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 11
+    },
+    "d_140": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_141": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_142": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_143": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_144": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_145": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_146": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_147": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_148": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_149": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_150": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_151": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_152": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_153": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_154": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 12
+    },
+    "d_155": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_156": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_157": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_158": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_159": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_160": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_161": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_162": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_163": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_164": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_165": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_166": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_167": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_168": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_169": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_170": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_171": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_172": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_173": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_174": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_175": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_176": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_177": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_178": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_179": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_180": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_181": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_182": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_183": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_184": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_185": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_186": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_187": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_188": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_189": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_190": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_191": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_192": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_193": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_194": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_195": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_196": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_197": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_198": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_199": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_200": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_201": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 7
+    },
+    "d_202": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_203": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_204": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_205": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_206": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_207": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_208": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_209": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_210": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_211": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_212": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_213": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 11
+    },
+    "d_214": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_215": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_216": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_217": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_218": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_219": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_220": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_221": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_222": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_223": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_224": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 7
+    },
+    "d_225": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_226": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_227": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_228": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_229": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_230": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_231": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_232": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_233": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_234": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_235": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_236": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_237": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_238": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_239": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_240": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_241": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 15.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 13
+    },
+    "d_242": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_243": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_244": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_245": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_246": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_247": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_248": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_249": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_250": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_251": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_252": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_253": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_254": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_255": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_256": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_257": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_258": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_259": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_260": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_261": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_262": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_263": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_264": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_265": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_266": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_267": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 7
+    },
+    "d_268": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_269": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_270": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_271": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_272": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_273": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_274": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_275": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_276": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_277": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_278": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_279": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_280": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_281": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_282": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_283": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_284": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 15.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 12
+    },
+    "d_285": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_286": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_287": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_288": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_289": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_290": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_291": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_292": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_293": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_294": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_295": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_296": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_297": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_298": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_299": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_300": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_301": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 11
+    },
+    "d_302": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_303": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_304": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_305": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_306": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 6,
+      "unique_values": 9
+    },
+    "d_307": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_308": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_309": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_310": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_311": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_312": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_313": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_314": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_315": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_316": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 7
+    },
+    "d_317": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 5,
+      "unique_values": 10
+    },
+    "d_318": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_319": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_320": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_321": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_322": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_323": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_324": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_325": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_326": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_327": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_328": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_329": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_330": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_331": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_332": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_333": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_334": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_335": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_336": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_337": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_338": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_339": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_340": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_341": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_342": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_343": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_344": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_345": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_346": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_347": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_348": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_349": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_350": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 10
+    },
+    "d_351": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_352": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_353": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_354": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_355": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_356": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_357": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_358": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_359": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_360": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_361": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 14
+    },
+    "d_362": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_363": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_364": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_365": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_366": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_367": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_368": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_369": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_370": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 10
+    },
+    "d_371": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_372": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_373": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_374": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_375": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_376": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_377": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_378": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_379": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_380": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_381": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_382": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_383": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_384": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_385": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_386": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_387": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_388": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 15.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_389": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_390": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_391": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_392": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_393": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_394": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_395": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_396": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_397": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_398": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_399": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_400": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 11
+    },
+    "d_401": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_402": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_403": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_404": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_405": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_406": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 11,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_407": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_408": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_409": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_410": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_411": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_412": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_413": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_414": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_415": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_416": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_417": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_418": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 12,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_419": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_420": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_421": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_422": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_423": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_424": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_425": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_426": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_427": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_428": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_429": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_430": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_431": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_432": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_433": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_434": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_435": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_436": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 10,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_437": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_438": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_439": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_440": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_441": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_442": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_443": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_444": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_445": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_446": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_447": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_448": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_449": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_450": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_451": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_452": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_453": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_454": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_455": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_456": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_457": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_458": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_459": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_460": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_461": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_462": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_463": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_464": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_465": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 11
+    },
+    "d_466": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_467": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_468": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_469": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_470": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_471": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_472": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_473": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_474": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_475": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_476": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_477": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_478": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_479": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_480": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_481": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_482": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_483": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_484": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_485": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_486": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_487": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_488": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_489": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_490": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_491": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_492": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 9
+    },
+    "d_493": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_494": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_495": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_496": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_497": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_498": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 8
+    },
+    "d_499": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_500": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_501": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_502": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_503": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_504": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_505": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 5,
+      "unique_values": 10
+    },
+    "d_506": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_507": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_508": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_509": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_510": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_511": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_512": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_513": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_514": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_515": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 12.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_516": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_517": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_518": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_519": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_520": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_521": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_522": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_523": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_524": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_525": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_526": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_527": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_528": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_529": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_530": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_531": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 10,
+      "unique_values": 8
+    },
+    "d_532": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_533": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_534": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_535": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_536": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_537": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_538": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_539": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_540": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_541": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_542": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_543": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_544": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_545": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_546": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_547": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_548": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_549": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_550": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_551": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_552": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_553": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 8
+    },
+    "d_554": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_555": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_556": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_557": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 14.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 12
+    },
+    "d_558": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 9
+    },
+    "d_559": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 7
+    },
+    "d_560": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_561": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_562": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 8
+    },
+    "d_563": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 2,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 10
+    },
+    "d_564": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_565": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_566": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_567": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 9
+    },
+    "d_568": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_569": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_570": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_571": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 11
+    },
+    "d_572": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 4,
+      "unique_values": 10
+    },
+    "d_573": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_574": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_575": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 3,
+      "unique_values": 11
+    },
+    "d_576": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_577": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_578": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_579": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_580": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 13.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_581": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 4,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 9
+    },
+    "d_582": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_583": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_584": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_585": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_586": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 9,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    },
+    "d_587": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_588": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 2,
+      "unique_values": 10
+    },
+    "d_589": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_590": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 7,
+      "minimum": 0.0,
+      "maximum": 8.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 9
+    },
+    "d_591": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 3,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_592": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 10
+    },
+    "d_593": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_594": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 10
+    },
+    "d_595": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_596": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "d_597": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 9.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 1,
+      "unique_values": 8
+    },
+    "d_598": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 6,
+      "minimum": 0.0,
+      "maximum": 11.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    },
+    "d_599": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 5,
+      "minimum": 0.0,
+      "maximum": 10.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 11
+    },
+    "d_600": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 8,
+      "minimum": 0.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 8
+    }
+  },
+  "duplicate_rows": 0,
+  "encoding": "utf-8",
+  "replacement_character_count": 0,
+  "peak_chunk_memory_bytes": 185100,
+  "file_size_bytes": 48885,
+  "outlier_method": "1.5 IQR on first 10,000 rows per numeric column; descriptive screen, not removal"
+}

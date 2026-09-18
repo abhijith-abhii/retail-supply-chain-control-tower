@@ -1,0 +1,28 @@
+{
+  "name": "Retail Control Tower",
+  "dataColors": [
+    "#147D92",
+    "#273B69",
+    "#E7A83E",
+    "#C45454",
+    "#7E6BA0",
+    "#78A58A"
+  ],
+  "background": "#F6F8FA",
+  "foreground": "#203247",
+  "tableAccent": "#147D92",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 16
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 11
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28
+    }
+  }
+}

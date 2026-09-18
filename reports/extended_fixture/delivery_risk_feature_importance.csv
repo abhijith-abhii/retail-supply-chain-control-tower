@@ -1,0 +1,33 @@
+model,feature,importance
+logistic_regression,cats__shipping_mode_second class,0.04475392944916829
+logistic_regression,cats__shipping_mode_standard class,-0.046614270972368914
+logistic_regression,cats__market_europe,-0.08573377045707695
+logistic_regression,cats__market_usca,0.0838734289338767
+logistic_regression,cats__region_east,0.0838734289338767
+logistic_regression,cats__region_west,-0.08573377045707695
+logistic_regression,cats__customer_segment_consumer,-0.0018603415231935427
+logistic_regression,num__scheduled_shipping_days,-0.09213129762632769
+decision_tree,cats__shipping_mode_second class,0.708279517169065
+decision_tree,cats__shipping_mode_standard class,0.0
+decision_tree,cats__market_europe,0.0
+decision_tree,cats__market_usca,0.0
+decision_tree,cats__region_east,0.18230238972930363
+decision_tree,cats__region_west,0.0
+decision_tree,cats__customer_segment_consumer,0.0
+decision_tree,num__scheduled_shipping_days,0.10941809310163143
+random_forest,cats__shipping_mode_second class,0.26283387793568447
+random_forest,cats__shipping_mode_standard class,0.13645093282073126
+random_forest,cats__market_europe,0.136068279816734
+random_forest,cats__market_usca,0.08218513959944827
+random_forest,cats__region_east,0.10164554880333673
+random_forest,cats__region_west,0.10015269485908468
+random_forest,cats__customer_segment_consumer,0.0
+random_forest,num__scheduled_shipping_days,0.18066352616498066
+lightgbm,cats__shipping_mode_second class,200.0
+lightgbm,cats__shipping_mode_standard class,0.0
+lightgbm,cats__market_europe,100.0
+lightgbm,cats__market_usca,0.0
+lightgbm,cats__region_east,0.0
+lightgbm,cats__region_west,0.0
+lightgbm,cats__customer_segment_consumer,0.0
+lightgbm,num__scheduled_shipping_days,0.0

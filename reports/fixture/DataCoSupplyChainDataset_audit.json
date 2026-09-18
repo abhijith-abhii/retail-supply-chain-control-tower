@@ -1,0 +1,358 @@
+{
+  "filename": "DataCoSupplyChainDataset.csv",
+  "rows": 484,
+  "columns": 23,
+  "column_stats": {
+    "Order Id": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1.0,
+      "maximum": 240.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 240
+    },
+    "Order Item Id": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1.0,
+      "maximum": 484.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 484
+    },
+    "order date (DateOrders)": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": "2016-01-01 00:00:00",
+      "date_max": "2016-04-30 00:00:00",
+      "outliers_iqr_sample": null,
+      "unique_values": 121
+    },
+    "shipping date (DateOrders)": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": "2016-01-04 00:00:00",
+      "date_max": "2016-05-05 00:00:00",
+      "outliers_iqr_sample": null,
+      "unique_values": 105
+    },
+    "Days for shipping (real)": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1.0,
+      "maximum": 7.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 7
+    },
+    "Days for shipment (scheduled)": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 2.0,
+      "maximum": 4.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 2
+    },
+    "Late_delivery_risk": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 239,
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 2
+    },
+    "Shipping Mode": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 2
+    },
+    "Market": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 2
+    },
+    "Order Region": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 2
+    },
+    "Category Name": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 2
+    },
+    "Customer Segment": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "Product Name": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 3
+    },
+    "Order Item Quantity": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 2.0,
+      "maximum": 2.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 1
+    },
+    "Order Item Total": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 20.052347259991183,
+      "maximum": 199.90775166034155,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 484
+    },
+    "Sales": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 20.052347259991183,
+      "maximum": 199.90775166034155,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 484
+    },
+    "Benefit per order": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 207,
+      "zero": 0,
+      "minimum": -38.968276932776355,
+      "maximum": 53.70082845679995,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 6,
+      "unique_values": 484
+    },
+    "Order Profit Per Order": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 207,
+      "zero": 0,
+      "minimum": -38.968276932776355,
+      "maximum": 53.70082845679995,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 6,
+      "unique_values": 484
+    },
+    "Order Item Profit Ratio": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 207,
+      "zero": 0,
+      "minimum": -0.1983547975230212,
+      "maximum": 0.2997026759135229,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 484
+    },
+    "Order Status": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "Customer Fname": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "Customer Email": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    },
+    "Customer Password": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 1
+    }
+  },
+  "duplicate_rows": 0,
+  "encoding": "utf-8",
+  "replacement_character_count": 0,
+  "peak_chunk_memory_bytes": 399876,
+  "file_size_bytes": 132228,
+  "outlier_method": "1.5 IQR on first 10,000 rows per numeric column; descriptive screen, not removal"
+}

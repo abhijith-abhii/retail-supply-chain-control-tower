@@ -1,0 +1,569 @@
+abc:
+  definition: 'Revenue concentration class using prior cumulative share: A <80%, B
+    <95%, C remainder.'
+  provenance: derived
+abc_xyz:
+  definition: Concatenated ABC and XYZ planning segment, e.g. A-X.
+  provenance: derived
+abnormal_profit_flag:
+  definition: Absolute line profit greater than twice absolute line sales; flag only,
+    not automatic deletion.
+  provenance: derived
+absolute_error:
+  definition: Absolute value of row prediction error.
+  provenance: derived
+actual_demand:
+  definition: Recorded held-out sales used as simulation demand proxy, not uncensored
+    demand.
+  provenance: observed
+actual_shipping_days:
+  definition: Source reported actual shipping duration in days; not last-mile scan
+    evidence.
+  provenance: observed
+actual_units:
+  definition: Observed held-out M5 sales units matched to a forecast.
+  provenance: observed
+annual_holding_cost_rate:
+  definition: Annual holding cost as fraction of assumed unit cost.
+  provenance: simulated
+arrivals:
+  definition: Units received today from previously placed purchase orders.
+  provenance: simulated
+as_of_date:
+  definition: Snapshot date at which an inventory recommendation was generated.
+  provenance: derived
+assumption_type:
+  definition: Explicit simulated_not_walmart provenance label.
+  provenance: simulated
+average_daily_demand:
+  definition: Trailing 90-day pre-origin recorded-sales mean for an item-store.
+  provenance: derived
+average_delay_days:
+  definition: Mean positive delay across eligible orders, including zero for on-time
+    orders.
+  provenance: derived
+average_inventory:
+  definition: Mean end-of-day units over the replay horizon for one item-store-policy-scenario-run.
+  provenance: simulated
+average_lead_time_days:
+  definition: Assumed expected replenishment lead time in days.
+  provenance: simulated
+average_signed_delay:
+  definition: Mean actual minus scheduled duration across eligible orders; can be
+    negative.
+  provenance: derived
+baseline_cost:
+  definition: Paired baseline total cost at the same item-store-service-scenario-run.
+  provenance: simulated
+baseline_lost_sales_value:
+  definition: Paired baseline unfulfilled units valued at origin price.
+  provenance: simulated
+bias:
+  definition: Sum(forecast-actual) / sum(actual); null for zero total actuals.
+  provenance: derived
+case_pack_size:
+  definition: Order quantities must be integer multiples of this positive unit count.
+  provenance: simulated
+category:
+  definition: Normalized DataCo product category; independent of M5 categories.
+  provenance: observed
+category_id:
+  definition: M5 category natural key.
+  provenance: observed
+closing_inventory:
+  definition: Opening units plus receipts minus fulfillment; nonnegative.
+  provenance: simulated
+coefficient_of_variation:
+  definition: Sample demand standard deviation / mean; null for zero mean.
+  provenance: derived
+completed_cycles:
+  definition: Completed receipt-to-receipt replenishment cycles; first and unfinished
+    cycles excluded.
+  provenance: simulated
+covered_80:
+  definition: Whether held-out actual is inside the nominal 80% interval.
+  provenance: derived
+covered_95:
+  definition: Whether held-out actual is inside the nominal 95% interval.
+  provenance: derived
+cumulative_revenue_share:
+  definition: Running revenue contribution in descending revenue order, including
+    current pair.
+  provenance: derived
+customer_segment:
+  definition: Normalized business customer segment; no personal identity.
+  provenance: observed
+cycle_service_level:
+  definition: Successful completed cycles / completed cycles; null if none completed.
+  provenance: simulated
+d:
+  definition: M5 day label d_N joined to calendar.
+  provenance: observed
+data_provenance:
+  definition: synthetic_fixture or kaggle; never substitute one for the other.
+  provenance: derived
+date:
+  definition: Calendar date represented by the observation or prediction.
+  provenance: observed
+date_key:
+  definition: Integer YYYYMMDD key derived from calendar date.
+  provenance: derived
+days:
+  definition: Number of replay dates for the KPI row.
+  provenance: simulated
+days_of_supply:
+  definition: Assumed initial inventory / forecast daily mean; undefined for zero
+    mean.
+  provenance: simulated
+delay_days:
+  definition: Signed actual minus scheduled shipping days on eligible orders.
+  provenance: derived
+delivery_eligible:
+  definition: "True for valid 0\u2013configured-max shipping durations excluding cancelled/suspected-fraud\
+    \ orders."
+  provenance: derived
+demand_std:
+  definition: Sample standard deviation of trailing 90-day recorded sales.
+  provenance: derived
+demand_uncertainty_std:
+  definition: Forecast-error SD used for inventory policy, falling back to raw demand
+    SD if unavailable.
+  provenance: simulated
+department_id:
+  definition: M5 department natural key.
+  provenance: observed
+dimension:
+  definition: Column whose values define a grouped operational output.
+  provenance: derived
+domain:
+  definition: M5 or DataCo; domains must never be combined as one retailer.
+  provenance: derived
+eligible_orders:
+  definition: Count of distinct eligible orders, or distinct order-category pairs
+    in category output.
+  provenance: derived
+eoq:
+  definition: "Square root of 2 \xD7 annualized units \xD7 fixed ordering cost / annual\
+    \ per-unit holding cost."
+  provenance: simulated
+error:
+  definition: Forecast units minus actual units; positive means overprediction.
+  provenance: derived
+estimated_cost_reduction:
+  definition: Baseline cost minus current policy cost; negative means worse scenario
+    cost.
+  provenance: simulated
+estimated_revenue_protected:
+  definition: Baseline lost-sales value minus current policy lost-sales value; scenario
+    only.
+  provenance: simulated
+estimated_unit_cost:
+  definition: Assumed cost-to-price ratio times last known price, with positive floor.
+  provenance: simulated
+event_flag:
+  definition: 1 if either source event is present on the date.
+  provenance: derived
+event_name:
+  definition: First source calendar event name; nullable.
+  provenance: observed
+event_name_2:
+  definition: Second source calendar event name; nullable.
+  provenance: observed
+event_type:
+  definition: First source calendar event type; nullable.
+  provenance: observed
+event_type_2:
+  definition: Second source calendar event type; nullable.
+  provenance: observed
+excess_units:
+  definition: Positive initial inventory above protection order-up-to target.
+  provenance: simulated
+excess_value:
+  definition: Excess units multiplied by estimated unit cost.
+  provenance: simulated
+expected_lead_time_demand:
+  definition: Forecast daily mean multiplied by mean lead days.
+  provenance: simulated
+fill_rate:
+  definition: Fulfilled units / demand proxy; null for zero demand.
+  provenance: simulated
+fold:
+  definition: Chronological rolling-origin fold index.
+  provenance: derived
+forecast_daily_demand:
+  definition: Mean predicted daily units over the planning horizon.
+  provenance: forecast
+forecast_demand:
+  definition: Daily origin-time forecast passed into inventory replay.
+  provenance: forecast
+forecast_error_std:
+  definition: Sample standard deviation of pre-test selected-model forecast residuals
+    per item-store.
+  provenance: derived
+forecast_level:
+  definition: item_store or selected_portfolio_total; aggregate models are separate
+    diagnostics.
+  provenance: derived
+forecast_units:
+  definition: Nonnegative model prediction in units for one item-store-date-origin-model.
+  provenance: forecast
+fulfilled_units:
+  definition: Minimum of available inventory and observed demand proxy.
+  provenance: simulated
+holding_cost:
+  definition: "Closing units \xD7 unit cost \xD7 annual holding rate / 365."
+  provenance: simulated
+horizon:
+  definition: Integer number of days after origin.
+  provenance: derived
+in_transit_units:
+  definition: All placed units still awaiting arrival at end of day, including new
+    orders.
+  provenance: simulated
+initial_inventory:
+  definition: Assumed opening on-hand units before first simulation demand.
+  provenance: simulated
+invalid_sales_flag:
+  definition: Negative configured sales or negative quantity; excluded from headline
+    profit measures.
+  provenance: derived
+inventory_turnover:
+  definition: Annualized fulfilled units / average inventory; unit proxy, not financial
+    COGS turnover.
+  provenance: simulated
+inventory_value:
+  definition: Assumed initial stock multiplied by estimated unit cost.
+  provenance: simulated
+item_id:
+  definition: M5 item natural key; not a DataCo product identifier.
+  provenance: observed
+last_price:
+  definition: Most recent non-null price known at the summary or forecast origin.
+  provenance: derived
+last_refresh_utc:
+  definition: UTC timestamp captured after result generation, not current viewing
+    time.
+  provenance: derived
+late_delivery_rate:
+  definition: "Late eligible orders / eligible orders, fraction 0\u20131; null for\
+    \ empty denominator."
+  provenance: derived
+late_order:
+  definition: 1 when actual shipping exceeds scheduled, 0 when on time, null if ineligible.
+  provenance: derived
+late_orders:
+  definition: Number of eligible late orders in a segment.
+  provenance: derived
+lead_time_standard_deviation:
+  definition: Assumed lead-time standard deviation in days.
+  provenance: simulated
+loss_making_line:
+  definition: True if a DataCo line has negative configured profit.
+  provenance: derived
+loss_making_order:
+  definition: True if sum of valid line profit for a DataCo order is negative.
+  provenance: derived
+lost_sale_cost:
+  definition: Lost units multiplied by assumed lost-sale penalty.
+  provenance: simulated
+lost_sale_penalty:
+  definition: Assumed cost per unfulfilled unit; not guaranteed lost revenue.
+  provenance: simulated
+lost_sales_units:
+  definition: Demand proxy minus fulfilled units; no backorders carried.
+  provenance: simulated
+lost_sales_value:
+  definition: Lost units valued at origin-time selling price; hypothetical revenue
+    loss.
+  provenance: simulated
+lower_80:
+  definition: Lower empirical residual bound for nominal 80% interval, clipped at
+    zero and below point.
+  provenance: forecast
+lower_95:
+  definition: Lower empirical residual bound for nominal 95% interval; not additive
+    into portfolio coverage.
+  provenance: forecast
+mae:
+  definition: Mean absolute forecast error in units.
+  provenance: derived
+mape:
+  definition: Mean absolute percentage error over nonzero actuals only; null if none.
+  provenance: derived
+market:
+  definition: Normalized DataCo market; independent of M5 geography.
+  provenance: observed
+maximum_inventory:
+  definition: Maximum closing units during replay.
+  provenance: simulated
+mean_series_day_units:
+  definition: Mean recorded demand over item-store-day observations in a group.
+  provenance: derived
+metric:
+  definition: Executive KPI identifier.
+  provenance: derived
+metric_type:
+  definition: Historical, forecast or scenario_estimate provenance class for executive
+    values.
+  provenance: derived
+minimum_order_quantity:
+  definition: Smallest nonzero purchase quantity before pack rounding.
+  provenance: simulated
+mode:
+  definition: Configured sample or full execution scope.
+  provenance: derived
+model:
+  definition: Forecast or classifier name; different forecast levels must not be pooled.
+  provenance: derived
+month:
+  definition: "Calendar month 1\u201312."
+  provenance: derived
+month_end_flag:
+  definition: 1 on the last calendar day of a month.
+  provenance: derived
+month_start_flag:
+  definition: 1 on the first calendar day of a month.
+  provenance: derived
+multiplier:
+  definition: 0.5, 1, or 1.5 factor applied to the named assumption.
+  provenance: simulated
+opening_inventory:
+  definition: On-hand units before today's receipts and demand.
+  provenance: simulated
+order_count:
+  definition: Distinct order count in a profitability group; non-additive across categories.
+  provenance: derived
+order_date:
+  definition: Parsed DataCo order calendar date; time of day discarded.
+  provenance: observed
+order_id:
+  definition: DataCo business order key; repeated across order lines, not a customer
+    identity.
+  provenance: observed
+order_item_id:
+  definition: Unique DataCo business order-line key.
+  provenance: observed
+order_quantity:
+  definition: Units ordered after today's demand at a review opportunity.
+  provenance: simulated
+order_up_to_level:
+  definition: Forecast mean times lead-plus-review days plus protection safety stock.
+  provenance: simulated
+ordering_cost:
+  definition: Fixed assumed order cost if a positive order was placed, otherwise zero.
+  provenance: simulated
+ordering_cost_per_order:
+  definition: Assumed fixed currency cost each time a purchase order is placed.
+  provenance: simulated
+orders:
+  definition: Distinct order count at the output aggregation grain.
+  provenance: derived
+origin:
+  definition: Last historical date available to the forecast.
+  provenance: derived
+period:
+  definition: Start date of the displayed daily, weekly or monthly aggregate.
+  provenance: derived
+policy:
+  definition: baseline or optimized replenishment policy.
+  provenance: simulated
+positive_delay_days:
+  definition: Maximum of signed delay and zero; null if ineligible.
+  provenance: derived
+price_change_demand_correlation:
+  definition: Pearson correlation of daily percentage price change and recorded units;
+    descriptive, not causal.
+  provenance: derived
+product_name:
+  definition: Normalized DataCo product label.
+  provenance: observed
+profit:
+  definition: Configured DataCo line benefit amount; defaults to benefit_per_order;
+    not repeated alias sum.
+  provenance: observed
+profit_margin:
+  definition: Aggregate or line profit / matching sales, depending on table grain;
+    undefined at zero sales.
+  provenance: derived
+protection_safety_stock:
+  definition: Safety units covering lead time plus periodic review interval.
+  provenance: simulated
+quantity:
+  definition: Source DataCo order-line quantity.
+  provenance: observed
+quarter:
+  definition: "Calendar quarter 1\u20134."
+  provenance: derived
+recommended_order_quantity:
+  definition: Larger of EOQ or target shortage, rounded to MOQ/case pack, zero if
+    no shortage.
+  provenance: simulated
+region:
+  definition: Normalized DataCo order region.
+  provenance: observed
+reorder_point:
+  definition: Expected lead-time demand plus lead-time safety stock; continuous-review
+    reference.
+  provenance: simulated
+revenue:
+  definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+    even with no price.
+  provenance: derived
+review_period_days:
+  definition: Number of calendar days between ordering reviews.
+  provenance: simulated
+rmse:
+  definition: Square root of mean squared forecast error in units.
+  provenance: derived
+rmsse:
+  definition: Square root of pooled row squared-error / training-series scale, valid
+    positive scales only; not WRMSSE.
+  provenance: derived
+run_id:
+  definition: Monte Carlo repeat index; average repeated worlds rather than summing.
+  provenance: simulated
+safety_stock:
+  definition: Normal-approximation lead-time buffer units based on assumed service
+    level.
+  provenance: simulated
+sales:
+  definition: Configured DataCo line net-sales amount; defaults to order_item_total.
+  provenance: observed
+scale:
+  definition: Mean squared training first difference after first nonzero sale; undefined
+    for constants.
+  provenance: derived
+scenario:
+  definition: Base or named one-factor-at-a-time sensitivity case.
+  provenance: simulated
+scheduled_shipping_days:
+  definition: Source promised shipping duration in days.
+  provenance: observed
+seed:
+  definition: Fixed pseudo-random seed for reproducible assumption generation.
+  provenance: simulated
+segment:
+  definition: Value of the corresponding segment or summary dimension.
+  provenance: derived
+segment_type:
+  definition: Dimension over which forecast accuracy is summarized.
+  provenance: derived
+sell_price:
+  definition: M5 listed weekly item-store selling price, source currency per unit.
+  provenance: observed
+sensitivity_factor:
+  definition: Assumption varied in the one-factor sensitivity case, or none for base.
+  provenance: simulated
+series_days:
+  definition: Number of item-store-day observations in the summary denominator.
+  provenance: derived
+series_id:
+  definition: M5 source series identifier including source split suffix.
+  provenance: observed
+shipping_mode:
+  definition: Normalized DataCo shipping service name.
+  provenance: observed
+snap_flag:
+  definition: Source state-specific SNAP eligibility indicator, 0 or 1; not a promotion
+    flag.
+  provenance: observed
+split_role:
+  definition: Calibration, selection or locked test role.
+  provenance: derived
+state_id:
+  definition: M5 state code CA, TX or WI.
+  provenance: observed
+stockout_days:
+  definition: Sum of item-store-days with lost demand.
+  provenance: simulated
+stockout_event:
+  definition: 1 when any demand is lost on the item-store-day.
+  provenance: simulated
+stockout_probability:
+  definition: Normal lead-time demand tail above initial stock assuming no initial
+    incoming POs.
+  provenance: simulated
+store_id:
+  definition: M5 store natural key.
+  provenance: observed
+successful_cycles:
+  definition: Completed cycles with no lost demand between consecutive receipts.
+  provenance: simulated
+supplier_id:
+  definition: SIM_ plus M5 category; illustrative supplier group, never real Walmart
+    supplier.
+  provenance: simulated
+target_service_level:
+  definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  provenance: simulated
+total_inventory_cost:
+  definition: Holding + ordering + lost-sale cost; excludes purchase spend and terminal
+    valuation.
+  provenance: simulated
+total_orders:
+  definition: Number of orders including ineligible outcomes within a segment.
+  provenance: derived
+training_seconds:
+  definition: Measured model-fit time in seconds; baseline fit is zero.
+  provenance: derived
+units_sold:
+  definition: M5 recorded sales units; availability-censored demand is possible.
+  provenance: observed
+upper_80:
+  definition: Upper empirical residual bound for nominal 80% interval, at least point
+    forecast.
+  provenance: forecast
+upper_95:
+  definition: Upper empirical residual bound for nominal 95% interval; not additive
+    into portfolio coverage.
+  provenance: forecast
+validation_end:
+  definition: Last held-out date in the fold.
+  provenance: derived
+validation_start:
+  definition: First held-out date in the fold.
+  provenance: derived
+value:
+  definition: Numeric executive KPI value; meaning and unit depend on metric and domain.
+  provenance: derived
+volume_segment:
+  definition: Low/medium/high thirds of training mean-demand percentile rank.
+  provenance: derived
+wape:
+  definition: Sum absolute forecast error / sum actual units; null when denominator
+    is zero.
+  provenance: derived
+weekday:
+  definition: Calendar weekday with Sunday=0, Monday=1, Saturday=6.
+  provenance: derived
+weekend_flag:
+  definition: 1 for Saturday/Sunday, otherwise 0.
+  provenance: derived
+wm_yr_wk:
+  definition: M5 retail calendar week identifier.
+  provenance: observed
+xyz:
+  definition: Variability class based on configured CV thresholds; high zero frequency
+    forces Z.
+  provenance: derived
+year:
+  definition: Calendar year.
+  provenance: derived
+zero_demand_share:
+  definition: Fraction of trailing item-store days with zero recorded sales.
+  provenance: derived
+zero_sales_flag:
+  definition: 1 if recorded units_sold equals zero.
+  provenance: derived
+evidence_type:
+  provenance: derived
+  definition: Historical, forecast evaluation, or simulated scenario evidence category.
+recommendation:
+  provenance: derived
+  definition: Proposed action inferred from computed metrics; requires operational validation.
+evidence:
+  provenance: derived
+  definition: Calculated metric and denominator supporting the proposed action.
+source_table:
+  provenance: derived
+  definition: Exact analytical table containing the evidence for the recommendation.

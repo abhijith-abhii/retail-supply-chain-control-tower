@@ -1,0 +1,68 @@
+{
+  "mode": "full",
+  "fixture": true,
+  "selected_model": "lightgbm",
+  "cohort_selection_cutoff": "2015-11-26 00:00:00",
+  "postgres_loaded": false,
+  "source_sales_rows": 21600,
+  "forecast_rows": 1008,
+  "simulation_series": 4,
+  "audits_executed": false,
+  "elapsed_seconds": 22.013033665993134,
+  "output_dir": "data/powerbi/fixture",
+  "config": {
+    "backtest_folds": 3,
+    "dataco": {
+      "aliases": {},
+      "category_mappings": {},
+      "filename": "DataCoSupplyChainDataset.csv",
+      "maximum_shipping_days": 90,
+      "net_sales_source": "order_item_total",
+      "profit_source": "benefit_per_order",
+      "risk_model": true
+    },
+    "duckdb_memory_limit": "2GB",
+    "forecast_horizon": 28,
+    "intermittent_zero_share": 0.5,
+    "inventory": {
+      "baseline_days_cover": 14,
+      "case_pack_size": 6,
+      "cost_to_price_ratio": 0.65,
+      "default_service_level": 0.95,
+      "holding_rate": 0.25,
+      "initial_days_supply": 14,
+      "lead_time_days_range": [
+        3,
+        10
+      ],
+      "lead_time_std_days": 1.5,
+      "lost_sale_penalty_to_price": 0.4,
+      "minimum_order_quantity": 6,
+      "monte_carlo_runs": 2,
+      "ordering_cost": 25.0,
+      "review_period_days": 7,
+      "sensitivity_series_limit": 4,
+      "service_levels": [
+        0.9,
+        0.95,
+        0.98
+      ],
+      "simulation_days": 90,
+      "simulation_series_limit": 4
+    },
+    "max_training_rows": 500000,
+    "minimum_history_days": 180,
+    "prediction_batch_series": 500,
+    "price_future_policy": "last_observed",
+    "sample_series": 24,
+    "sample_stores": 2,
+    "seed": 42,
+    "selection_days": 90,
+    "threads": 4,
+    "training_days": 365,
+    "xyz_cv_thresholds": [
+      0.5,
+      1.0
+    ]
+  }
+}

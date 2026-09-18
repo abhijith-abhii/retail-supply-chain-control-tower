@@ -1,0 +1,9 @@
+{
+  "encoding": "utf-8",
+  "dropped_column_names": [
+    "customer_email",
+    "customer_fname",
+    "customer_password"
+  ],
+  "note": "Customer identifiers and all non-allowlisted fields dropped before analytical storage."
+}

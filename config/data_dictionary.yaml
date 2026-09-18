@@ -1,0 +1,2236 @@
+abc_xyz_segmentation:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  abc:
+    type: string
+    provenance: derived
+    definition: 'Revenue concentration class using prior cumulative share: A <80%,
+      B <95%, C remainder.'
+  xyz:
+    type: string
+    provenance: derived
+    definition: Variability class based on configured CV thresholds; high zero frequency
+      forces Z.
+  abc_xyz:
+    type: string
+    provenance: derived
+    definition: Concatenated ABC and XYZ planning segment, e.g. A-X.
+  volume_segment:
+    type: string
+    provenance: derived
+    definition: Low/medium/high thirds of training mean-demand percentile rank.
+  coefficient_of_variation:
+    type: double
+    provenance: derived
+    definition: Sample demand standard deviation / mean; null for zero mean.
+  cumulative_revenue_share:
+    type: double
+    provenance: derived
+    definition: Running revenue contribution in descending revenue order, including
+      current pair.
+bridge_date_event:
+  date_key:
+    type: int32
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  event_name:
+    type: string
+    provenance: observed
+    definition: First source calendar event name; nullable.
+dataco_category_delivery:
+  category:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo product category; independent of M5 categories.
+  orders:
+    type: int64
+    provenance: derived
+    definition: Distinct order count at the output aggregation grain.
+  eligible_orders:
+    type: int64
+    provenance: derived
+    definition: Count of distinct eligible orders, or distinct order-category pairs
+      in category output.
+  late_orders:
+    type: int64
+    provenance: derived
+    definition: Number of eligible late orders in a segment.
+  late_delivery_rate:
+    type: double
+    provenance: derived
+    definition: "Late eligible orders / eligible orders, fraction 0\u20131; null for\
+      \ empty denominator."
+dataco_delivery_performance:
+  order_id:
+    type: int64
+    provenance: observed
+    definition: DataCo business order key; repeated across order lines, not a customer
+      identity.
+  order_date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Parsed DataCo order calendar date; time of day discarded.
+  shipping_mode:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo shipping service name.
+  market:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo market; independent of M5 geography.
+  region:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo order region.
+  customer_segment:
+    type: string
+    provenance: observed
+    definition: Normalized business customer segment; no personal identity.
+  actual_shipping_days:
+    type: int64
+    provenance: observed
+    definition: Source reported actual shipping duration in days; not last-mile scan
+      evidence.
+  scheduled_shipping_days:
+    type: int64
+    provenance: observed
+    definition: Source promised shipping duration in days.
+  delivery_eligible:
+    type: bool
+    provenance: derived
+    definition: "True for valid 0\u2013configured-max shipping durations excluding\
+      \ cancelled/suspected-fraud orders."
+  late_order:
+    type: int64
+    provenance: derived
+    definition: 1 when actual shipping exceeds scheduled, 0 when on time, null if
+      ineligible.
+  delay_days:
+    type: int64
+    provenance: derived
+    definition: Signed actual minus scheduled shipping days on eligible orders.
+  positive_delay_days:
+    type: int64
+    provenance: derived
+    definition: Maximum of signed delay and zero; null if ineligible.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+dataco_monthly:
+  period:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Start date of the displayed daily, weekly or monthly aggregate.
+  sales:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line net-sales amount; defaults to order_item_total.
+  profit:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line benefit amount; defaults to benefit_per_order;
+      not repeated alias sum.
+  orders:
+    type: int64
+    provenance: derived
+    definition: Distinct order count at the output aggregation grain.
+dataco_order_profit:
+  order_id:
+    type: int64
+    provenance: observed
+    definition: DataCo business order key; repeated across order lines, not a customer
+      identity.
+  sales:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line net-sales amount; defaults to order_item_total.
+  profit:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line benefit amount; defaults to benefit_per_order;
+      not repeated alias sum.
+  loss_making_order:
+    type: bool
+    provenance: derived
+    definition: True if sum of valid line profit for a DataCo order is negative.
+dataco_profitability:
+  order_item_id:
+    type: int64
+    provenance: observed
+    definition: Unique DataCo business order-line key.
+  order_id:
+    type: int64
+    provenance: observed
+    definition: DataCo business order key; repeated across order lines, not a customer
+      identity.
+  order_date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Parsed DataCo order calendar date; time of day discarded.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  shipping_mode:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo shipping service name.
+  market:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo market; independent of M5 geography.
+  region:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo order region.
+  category:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo product category; independent of M5 categories.
+  customer_segment:
+    type: string
+    provenance: observed
+    definition: Normalized business customer segment; no personal identity.
+  product_name:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo product label.
+  quantity:
+    type: int64
+    provenance: observed
+    definition: Source DataCo order-line quantity.
+  sales:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line net-sales amount; defaults to order_item_total.
+  profit:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line benefit amount; defaults to benefit_per_order;
+      not repeated alias sum.
+  invalid_sales_flag:
+    type: bool
+    provenance: derived
+    definition: Negative configured sales or negative quantity; excluded from headline
+      profit measures.
+  abnormal_profit_flag:
+    type: bool
+    provenance: derived
+    definition: Absolute line profit greater than twice absolute line sales; flag
+      only, not automatic deletion.
+  profit_margin:
+    type: double
+    provenance: derived
+    definition: Aggregate or line profit / matching sales, depending on table grain;
+      undefined at zero sales.
+  loss_making_line:
+    type: bool
+    provenance: derived
+    definition: True if a DataCo line has negative configured profit.
+dataco_profitability_summary:
+  segment:
+    type: string
+    provenance: derived
+    definition: Value of the corresponding segment or summary dimension.
+  sales:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line net-sales amount; defaults to order_item_total.
+  profit:
+    type: double
+    provenance: observed
+    definition: Configured DataCo line benefit amount; defaults to benefit_per_order;
+      not repeated alias sum.
+  order_count:
+    type: int64
+    provenance: derived
+    definition: Distinct order count in a profitability group; non-additive across
+      categories.
+  dimension:
+    type: string
+    provenance: derived
+    definition: Column whose values define a grouped operational output.
+  profit_margin:
+    type: double
+    provenance: derived
+    definition: Aggregate or line profit / matching sales, depending on table grain;
+      undefined at zero sales.
+dataco_shipping_mode_performance:
+  dimension:
+    type: string
+    provenance: derived
+    definition: Column whose values define a grouped operational output.
+  segment:
+    type: string
+    provenance: derived
+    definition: Value of the corresponding segment or summary dimension.
+  total_orders:
+    type: int64
+    provenance: derived
+    definition: Number of orders including ineligible outcomes within a segment.
+  eligible_orders:
+    type: int64
+    provenance: derived
+    definition: Count of distinct eligible orders, or distinct order-category pairs
+      in category output.
+  late_orders:
+    type: int64
+    provenance: derived
+    definition: Number of eligible late orders in a segment.
+  late_delivery_rate:
+    type: double
+    provenance: derived
+    definition: "Late eligible orders / eligible orders, fraction 0\u20131; null for\
+      \ empty denominator."
+  average_delay_days:
+    type: double
+    provenance: derived
+    definition: Mean positive delay across eligible orders, including zero for on-time
+      orders.
+  average_signed_delay:
+    type: double
+    provenance: derived
+    definition: Mean actual minus scheduled duration across eligible orders; can be
+      negative.
+  actual_shipping_days:
+    type: double
+    provenance: observed
+    definition: Source reported actual shipping duration in days; not last-mile scan
+      evidence.
+  scheduled_shipping_days:
+    type: double
+    provenance: observed
+    definition: Source promised shipping duration in days.
+demand_forecasts_28d:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  origin:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Last historical date available to the forecast.
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  horizon:
+    type: int64
+    provenance: derived
+    definition: Integer number of days after origin.
+  model:
+    type: string
+    provenance: derived
+    definition: Forecast or classifier name; different forecast levels must not be
+      pooled.
+  forecast_units:
+    type: double
+    provenance: forecast
+    definition: Nonnegative model prediction in units for one item-store-date-origin-model.
+  scale:
+    type: double
+    provenance: derived
+    definition: Mean squared training first difference after first nonzero sale; undefined
+      for constants.
+  lower_80:
+    type: double
+    provenance: forecast
+    definition: Lower empirical residual bound for nominal 80% interval, clipped at
+      zero and below point.
+  upper_80:
+    type: double
+    provenance: forecast
+    definition: Upper empirical residual bound for nominal 80% interval, at least
+      point forecast.
+  lower_95:
+    type: double
+    provenance: forecast
+    definition: Lower empirical residual bound for nominal 95% interval; not additive
+      into portfolio coverage.
+  upper_95:
+    type: double
+    provenance: forecast
+    definition: Upper empirical residual bound for nominal 95% interval; not additive
+      into portfolio coverage.
+dim_category:
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+dim_customer_segment:
+  customer_segment:
+    type: string
+    provenance: observed
+    definition: Normalized business customer segment; no personal identity.
+dim_date:
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  year:
+    type: int32
+    provenance: derived
+    definition: Calendar year.
+  month:
+    type: int32
+    provenance: derived
+    definition: "Calendar month 1\u201312."
+  quarter:
+    type: int32
+    provenance: derived
+    definition: "Calendar quarter 1\u20134."
+dim_department:
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+dim_event:
+  event_name:
+    type: string
+    provenance: observed
+    definition: First source calendar event name; nullable.
+  event_type:
+    type: string
+    provenance: observed
+    definition: First source calendar event type; nullable.
+dim_market:
+  market:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo market; independent of M5 geography.
+dim_order_date:
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  year:
+    type: int32
+    provenance: derived
+    definition: Calendar year.
+  month:
+    type: int32
+    provenance: derived
+    definition: "Calendar month 1\u201312."
+  quarter:
+    type: int32
+    provenance: derived
+    definition: "Calendar quarter 1\u20134."
+dim_product:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+dim_product_category:
+  category:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo product category; independent of M5 categories.
+dim_region:
+  region:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo order region.
+dim_shipping_mode:
+  shipping_mode:
+    type: string
+    provenance: observed
+    definition: Normalized DataCo shipping service name.
+dim_state:
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+dim_store:
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+excess_inventory:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  average_daily_demand:
+    type: double
+    provenance: derived
+    definition: Trailing 90-day pre-origin recorded-sales mean for an item-store.
+  demand_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of trailing 90-day recorded sales.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  zero_demand_share:
+    type: double
+    provenance: derived
+    definition: Fraction of trailing item-store days with zero recorded sales.
+  last_price:
+    type: double
+    provenance: derived
+    definition: Most recent non-null price known at the summary or forecast origin.
+  supplier_id:
+    type: string
+    provenance: simulated
+    definition: SIM_ plus M5 category; illustrative supplier group, never real Walmart
+      supplier.
+  average_lead_time_days:
+    type: int64
+    provenance: simulated
+    definition: Assumed expected replenishment lead time in days.
+  lead_time_standard_deviation:
+    type: double
+    provenance: simulated
+    definition: Assumed lead-time standard deviation in days.
+  ordering_cost_per_order:
+    type: double
+    provenance: simulated
+    definition: Assumed fixed currency cost each time a purchase order is placed.
+  annual_holding_cost_rate:
+    type: double
+    provenance: simulated
+    definition: Annual holding cost as fraction of assumed unit cost.
+  estimated_unit_cost:
+    type: double
+    provenance: simulated
+    definition: Assumed cost-to-price ratio times last known price, with positive
+      floor.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  initial_inventory:
+    type: int64
+    provenance: simulated
+    definition: Assumed opening on-hand units before first simulation demand.
+  review_period_days:
+    type: int64
+    provenance: simulated
+    definition: Number of calendar days between ordering reviews.
+  lost_sale_penalty:
+    type: double
+    provenance: simulated
+    definition: Assumed cost per unfulfilled unit; not guaranteed lost revenue.
+  minimum_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Smallest nonzero purchase quantity before pack rounding.
+  case_pack_size:
+    type: int64
+    provenance: simulated
+    definition: Order quantities must be integer multiples of this positive unit count.
+  assumption_type:
+    type: string
+    provenance: simulated
+    definition: Explicit simulated_not_walmart provenance label.
+  seed:
+    type: int64
+    provenance: simulated
+    definition: Fixed pseudo-random seed for reproducible assumption generation.
+  forecast_daily_demand:
+    type: double
+    provenance: forecast
+    definition: Mean predicted daily units over the planning horizon.
+  forecast_error_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of pre-test selected-model forecast residuals
+      per item-store.
+  as_of_date:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Snapshot date at which an inventory recommendation was generated.
+  safety_stock:
+    type: double
+    provenance: simulated
+    definition: Normal-approximation lead-time buffer units based on assumed service
+      level.
+  expected_lead_time_demand:
+    type: double
+    provenance: simulated
+    definition: Forecast daily mean multiplied by mean lead days.
+  reorder_point:
+    type: double
+    provenance: simulated
+    definition: Expected lead-time demand plus lead-time safety stock; continuous-review
+      reference.
+  protection_safety_stock:
+    type: double
+    provenance: simulated
+    definition: Safety units covering lead time plus periodic review interval.
+  order_up_to_level:
+    type: double
+    provenance: simulated
+    definition: Forecast mean times lead-plus-review days plus protection safety stock.
+  eoq:
+    type: double
+    provenance: simulated
+    definition: "Square root of 2 \xD7 annualized units \xD7 fixed ordering cost /\
+      \ annual per-unit holding cost."
+  days_of_supply:
+    type: double
+    provenance: simulated
+    definition: Assumed initial inventory / forecast daily mean; undefined for zero
+      mean.
+  inventory_value:
+    type: double
+    provenance: simulated
+    definition: Assumed initial stock multiplied by estimated unit cost.
+  demand_uncertainty_std:
+    type: double
+    provenance: simulated
+    definition: Forecast-error SD used for inventory policy, falling back to raw demand
+      SD if unavailable.
+  stockout_probability:
+    type: double
+    provenance: simulated
+    definition: Normal lead-time demand tail above initial stock assuming no initial
+      incoming POs.
+  recommended_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Larger of EOQ or target shortage, rounded to MOQ/case pack, zero if
+      no shortage.
+  excess_units:
+    type: double
+    provenance: simulated
+    definition: Positive initial inventory above protection order-up-to target.
+  excess_value:
+    type: double
+    provenance: simulated
+    definition: Excess units multiplied by estimated unit cost.
+executive_kpis:
+  domain:
+    type: string
+    provenance: derived
+    definition: M5 or DataCo; domains must never be combined as one retailer.
+  metric_type:
+    type: string
+    provenance: derived
+    definition: Historical, forecast or scenario_estimate provenance class for executive
+      values.
+  metric:
+    type: string
+    provenance: derived
+    definition: Executive KPI identifier.
+  value:
+    type: double
+    provenance: derived
+    definition: Numeric executive KPI value; meaning and unit depend on metric and
+      domain.
+  data_provenance:
+    type: string
+    provenance: derived
+    definition: synthetic_fixture or kaggle; never substitute one for the other.
+fact_sell_price:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  wm_yr_wk:
+    type: int64
+    provenance: observed
+    definition: M5 retail calendar week identifier.
+  sell_price:
+    type: double
+    provenance: observed
+    definition: M5 listed weekly item-store selling price, source currency per unit.
+forecast_accuracy_by_segment:
+  segment_type:
+    type: string
+    provenance: derived
+    definition: Dimension over which forecast accuracy is summarized.
+  segment:
+    type: string
+    provenance: derived
+    definition: Value of the corresponding segment or summary dimension.
+  model:
+    type: string
+    provenance: derived
+    definition: Forecast or classifier name; different forecast levels must not be
+      pooled.
+  mae:
+    type: double
+    provenance: derived
+    definition: Mean absolute forecast error in units.
+  rmse:
+    type: double
+    provenance: derived
+    definition: Square root of mean squared forecast error in units.
+  wape:
+    type: double
+    provenance: derived
+    definition: Sum absolute forecast error / sum actual units; null when denominator
+      is zero.
+  mape:
+    type: double
+    provenance: derived
+    definition: Mean absolute percentage error over nonzero actuals only; null if
+      none.
+  bias:
+    type: double
+    provenance: derived
+    definition: Sum(forecast-actual) / sum(actual); null for zero total actuals.
+  rmsse:
+    type: double
+    provenance: derived
+    definition: Square root of pooled row squared-error / training-series scale, valid
+      positive scales only; not WRMSSE.
+forecast_backtest_all:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  origin:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Last historical date available to the forecast.
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  horizon:
+    type: int64
+    provenance: derived
+    definition: Integer number of days after origin.
+  model:
+    type: string
+    provenance: derived
+    definition: Forecast or classifier name; different forecast levels must not be
+      pooled.
+  forecast_units:
+    type: double
+    provenance: forecast
+    definition: Nonnegative model prediction in units for one item-store-date-origin-model.
+  scale:
+    type: double
+    provenance: derived
+    definition: Mean squared training first difference after first nonzero sale; undefined
+      for constants.
+  actual_units:
+    type: int64
+    provenance: observed
+    definition: Observed held-out M5 sales units matched to a forecast.
+  fold:
+    type: int64
+    provenance: derived
+    definition: Chronological rolling-origin fold index.
+  split_role:
+    type: string
+    provenance: derived
+    definition: Calibration, selection or locked test role.
+  error:
+    type: double
+    provenance: derived
+    definition: Forecast units minus actual units; positive means overprediction.
+  absolute_error:
+    type: double
+    provenance: derived
+    definition: Absolute value of row prediction error.
+forecast_backtest_selected:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  origin:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Last historical date available to the forecast.
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int64
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  horizon:
+    type: int64
+    provenance: derived
+    definition: Integer number of days after origin.
+  model:
+    type: string
+    provenance: derived
+    definition: Forecast or classifier name; different forecast levels must not be
+      pooled.
+  forecast_units:
+    type: double
+    provenance: forecast
+    definition: Nonnegative model prediction in units for one item-store-date-origin-model.
+  scale:
+    type: double
+    provenance: derived
+    definition: Mean squared training first difference after first nonzero sale; undefined
+      for constants.
+  actual_units:
+    type: int64
+    provenance: observed
+    definition: Observed held-out M5 sales units matched to a forecast.
+  fold:
+    type: int64
+    provenance: derived
+    definition: Chronological rolling-origin fold index.
+  split_role:
+    type: string
+    provenance: derived
+    definition: Calibration, selection or locked test role.
+  error:
+    type: double
+    provenance: derived
+    definition: Forecast units minus actual units; positive means overprediction.
+  absolute_error:
+    type: double
+    provenance: derived
+    definition: Absolute value of row prediction error.
+  lower_80:
+    type: double
+    provenance: forecast
+    definition: Lower empirical residual bound for nominal 80% interval, clipped at
+      zero and below point.
+  upper_80:
+    type: double
+    provenance: forecast
+    definition: Upper empirical residual bound for nominal 80% interval, at least
+      point forecast.
+  lower_95:
+    type: double
+    provenance: forecast
+    definition: Lower empirical residual bound for nominal 95% interval; not additive
+      into portfolio coverage.
+  upper_95:
+    type: double
+    provenance: forecast
+    definition: Upper empirical residual bound for nominal 95% interval; not additive
+      into portfolio coverage.
+  covered_80:
+    type: bool
+    provenance: derived
+    definition: Whether held-out actual is inside the nominal 80% interval.
+  covered_95:
+    type: bool
+    provenance: derived
+    definition: Whether held-out actual is inside the nominal 95% interval.
+forecast_model_metrics:
+  model:
+    type: string
+    provenance: derived
+    definition: Forecast or classifier name; different forecast levels must not be
+      pooled.
+  fold:
+    type: int64
+    provenance: derived
+    definition: Chronological rolling-origin fold index.
+  split_role:
+    type: string
+    provenance: derived
+    definition: Calibration, selection or locked test role.
+  origin:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Last historical date available to the forecast.
+  validation_start:
+    type: timestamp[ns]
+    provenance: derived
+    definition: First held-out date in the fold.
+  validation_end:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Last held-out date in the fold.
+  forecast_level:
+    type: string
+    provenance: derived
+    definition: item_store or selected_portfolio_total; aggregate models are separate
+      diagnostics.
+  training_seconds:
+    type: double
+    provenance: derived
+    definition: Measured model-fit time in seconds; baseline fit is zero.
+  mae:
+    type: double
+    provenance: derived
+    definition: Mean absolute forecast error in units.
+  rmse:
+    type: double
+    provenance: derived
+    definition: Square root of mean squared forecast error in units.
+  wape:
+    type: double
+    provenance: derived
+    definition: Sum absolute forecast error / sum actual units; null when denominator
+      is zero.
+  mape:
+    type: double
+    provenance: derived
+    definition: Mean absolute percentage error over nonzero actuals only; null if
+      none.
+  bias:
+    type: double
+    provenance: derived
+    definition: Sum(forecast-actual) / sum(actual); null for zero total actuals.
+  rmsse:
+    type: double
+    provenance: derived
+    definition: Square root of pooled row squared-error / training-series scale, valid
+      positive scales only; not WRMSSE.
+inventory_assumptions:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  supplier_id:
+    type: string
+    provenance: simulated
+    definition: SIM_ plus M5 category; illustrative supplier group, never real Walmart
+      supplier.
+  average_lead_time_days:
+    type: int64
+    provenance: simulated
+    definition: Assumed expected replenishment lead time in days.
+  lead_time_standard_deviation:
+    type: double
+    provenance: simulated
+    definition: Assumed lead-time standard deviation in days.
+  ordering_cost_per_order:
+    type: double
+    provenance: simulated
+    definition: Assumed fixed currency cost each time a purchase order is placed.
+  annual_holding_cost_rate:
+    type: double
+    provenance: simulated
+    definition: Annual holding cost as fraction of assumed unit cost.
+  estimated_unit_cost:
+    type: double
+    provenance: simulated
+    definition: Assumed cost-to-price ratio times last known price, with positive
+      floor.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  initial_inventory:
+    type: int64
+    provenance: simulated
+    definition: Assumed opening on-hand units before first simulation demand.
+  review_period_days:
+    type: int64
+    provenance: simulated
+    definition: Number of calendar days between ordering reviews.
+  lost_sale_penalty:
+    type: double
+    provenance: simulated
+    definition: Assumed cost per unfulfilled unit; not guaranteed lost revenue.
+  minimum_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Smallest nonzero purchase quantity before pack rounding.
+  case_pack_size:
+    type: int64
+    provenance: simulated
+    definition: Order quantities must be integer multiples of this positive unit count.
+  assumption_type:
+    type: string
+    provenance: simulated
+    definition: Explicit simulated_not_walmart provenance label.
+  seed:
+    type: int64
+    provenance: simulated
+    definition: Fixed pseudo-random seed for reproducible assumption generation.
+inventory_policy_recommendations:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  average_daily_demand:
+    type: double
+    provenance: derived
+    definition: Trailing 90-day pre-origin recorded-sales mean for an item-store.
+  demand_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of trailing 90-day recorded sales.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  zero_demand_share:
+    type: double
+    provenance: derived
+    definition: Fraction of trailing item-store days with zero recorded sales.
+  last_price:
+    type: double
+    provenance: derived
+    definition: Most recent non-null price known at the summary or forecast origin.
+  supplier_id:
+    type: string
+    provenance: simulated
+    definition: SIM_ plus M5 category; illustrative supplier group, never real Walmart
+      supplier.
+  average_lead_time_days:
+    type: int64
+    provenance: simulated
+    definition: Assumed expected replenishment lead time in days.
+  lead_time_standard_deviation:
+    type: double
+    provenance: simulated
+    definition: Assumed lead-time standard deviation in days.
+  ordering_cost_per_order:
+    type: double
+    provenance: simulated
+    definition: Assumed fixed currency cost each time a purchase order is placed.
+  annual_holding_cost_rate:
+    type: double
+    provenance: simulated
+    definition: Annual holding cost as fraction of assumed unit cost.
+  estimated_unit_cost:
+    type: double
+    provenance: simulated
+    definition: Assumed cost-to-price ratio times last known price, with positive
+      floor.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  initial_inventory:
+    type: int64
+    provenance: simulated
+    definition: Assumed opening on-hand units before first simulation demand.
+  review_period_days:
+    type: int64
+    provenance: simulated
+    definition: Number of calendar days between ordering reviews.
+  lost_sale_penalty:
+    type: double
+    provenance: simulated
+    definition: Assumed cost per unfulfilled unit; not guaranteed lost revenue.
+  minimum_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Smallest nonzero purchase quantity before pack rounding.
+  case_pack_size:
+    type: int64
+    provenance: simulated
+    definition: Order quantities must be integer multiples of this positive unit count.
+  assumption_type:
+    type: string
+    provenance: simulated
+    definition: Explicit simulated_not_walmart provenance label.
+  seed:
+    type: int64
+    provenance: simulated
+    definition: Fixed pseudo-random seed for reproducible assumption generation.
+  forecast_daily_demand:
+    type: double
+    provenance: forecast
+    definition: Mean predicted daily units over the planning horizon.
+  forecast_error_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of pre-test selected-model forecast residuals
+      per item-store.
+  as_of_date:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Snapshot date at which an inventory recommendation was generated.
+  safety_stock:
+    type: double
+    provenance: simulated
+    definition: Normal-approximation lead-time buffer units based on assumed service
+      level.
+  expected_lead_time_demand:
+    type: double
+    provenance: simulated
+    definition: Forecast daily mean multiplied by mean lead days.
+  reorder_point:
+    type: double
+    provenance: simulated
+    definition: Expected lead-time demand plus lead-time safety stock; continuous-review
+      reference.
+  protection_safety_stock:
+    type: double
+    provenance: simulated
+    definition: Safety units covering lead time plus periodic review interval.
+  order_up_to_level:
+    type: double
+    provenance: simulated
+    definition: Forecast mean times lead-plus-review days plus protection safety stock.
+  eoq:
+    type: double
+    provenance: simulated
+    definition: "Square root of 2 \xD7 annualized units \xD7 fixed ordering cost /\
+      \ annual per-unit holding cost."
+  days_of_supply:
+    type: double
+    provenance: simulated
+    definition: Assumed initial inventory / forecast daily mean; undefined for zero
+      mean.
+  inventory_value:
+    type: double
+    provenance: simulated
+    definition: Assumed initial stock multiplied by estimated unit cost.
+  demand_uncertainty_std:
+    type: double
+    provenance: simulated
+    definition: Forecast-error SD used for inventory policy, falling back to raw demand
+      SD if unavailable.
+  stockout_probability:
+    type: double
+    provenance: simulated
+    definition: Normal lead-time demand tail above initial stock assuming no initial
+      incoming POs.
+  recommended_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Larger of EOQ or target shortage, rounded to MOQ/case pack, zero if
+      no shortage.
+  excess_units:
+    type: double
+    provenance: simulated
+    definition: Positive initial inventory above protection order-up-to target.
+  excess_value:
+    type: double
+    provenance: simulated
+    definition: Excess units multiplied by estimated unit cost.
+inventory_sensitivity:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  policy:
+    type: string
+    provenance: simulated
+    definition: baseline or optimized replenishment policy.
+  scenario:
+    type: string
+    provenance: simulated
+    definition: Base or named one-factor-at-a-time sensitivity case.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  run_id:
+    type: int64
+    provenance: simulated
+    definition: Monte Carlo repeat index; average repeated worlds rather than summing.
+  actual_demand:
+    type: double
+    provenance: observed
+    definition: Recorded held-out sales used as simulation demand proxy, not uncensored
+      demand.
+  fulfilled_units:
+    type: double
+    provenance: simulated
+    definition: Minimum of available inventory and observed demand proxy.
+  lost_sales_units:
+    type: double
+    provenance: simulated
+    definition: Demand proxy minus fulfilled units; no backorders carried.
+  lost_sales_value:
+    type: double
+    provenance: simulated
+    definition: Lost units valued at origin-time selling price; hypothetical revenue
+      loss.
+  average_inventory:
+    type: double
+    provenance: simulated
+    definition: Mean end-of-day units over the replay horizon for one item-store-policy-scenario-run.
+  maximum_inventory:
+    type: double
+    provenance: simulated
+    definition: Maximum closing units during replay.
+  stockout_days:
+    type: int64
+    provenance: simulated
+    definition: Sum of item-store-days with lost demand.
+  holding_cost:
+    type: double
+    provenance: simulated
+    definition: "Closing units \xD7 unit cost \xD7 annual holding rate / 365."
+  ordering_cost:
+    type: double
+    provenance: simulated
+    definition: Fixed assumed order cost if a positive order was placed, otherwise
+      zero.
+  lost_sale_cost:
+    type: double
+    provenance: simulated
+    definition: Lost units multiplied by assumed lost-sale penalty.
+  total_inventory_cost:
+    type: double
+    provenance: simulated
+    definition: Holding + ordering + lost-sale cost; excludes purchase spend and terminal
+      valuation.
+  completed_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed receipt-to-receipt replenishment cycles; first and unfinished
+      cycles excluded.
+  successful_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed cycles with no lost demand between consecutive receipts.
+  days:
+    type: int64
+    provenance: simulated
+    definition: Number of replay dates for the KPI row.
+  fill_rate:
+    type: double
+    provenance: simulated
+    definition: Fulfilled units / demand proxy; null for zero demand.
+  cycle_service_level:
+    type: double
+    provenance: simulated
+    definition: Successful completed cycles / completed cycles; null if none completed.
+  inventory_turnover:
+    type: double
+    provenance: simulated
+    definition: Annualized fulfilled units / average inventory; unit proxy, not financial
+      COGS turnover.
+  baseline_cost:
+    type: double
+    provenance: simulated
+    definition: Paired baseline total cost at the same item-store-service-scenario-run.
+  baseline_lost_sales_value:
+    type: double
+    provenance: simulated
+    definition: Paired baseline unfulfilled units valued at origin price.
+  estimated_cost_reduction:
+    type: double
+    provenance: simulated
+    definition: Baseline cost minus current policy cost; negative means worse scenario
+      cost.
+  estimated_revenue_protected:
+    type: double
+    provenance: simulated
+    definition: Baseline lost-sales value minus current policy lost-sales value; scenario
+      only.
+  sensitivity_factor:
+    type: string
+    provenance: simulated
+    definition: Assumption varied in the one-factor sensitivity case, or none for
+      base.
+  multiplier:
+    type: double
+    provenance: simulated
+    definition: 0.5, 1, or 1.5 factor applied to the named assumption.
+inventory_simulation_daily:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  date:
+    type: timestamp[ns]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  policy:
+    type: string
+    provenance: simulated
+    definition: baseline or optimized replenishment policy.
+  scenario:
+    type: string
+    provenance: simulated
+    definition: Base or named one-factor-at-a-time sensitivity case.
+  run_id:
+    type: int64
+    provenance: simulated
+    definition: Monte Carlo repeat index; average repeated worlds rather than summing.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  opening_inventory:
+    type: double
+    provenance: simulated
+    definition: On-hand units before today's receipts and demand.
+  arrivals:
+    type: int64
+    provenance: simulated
+    definition: Units received today from previously placed purchase orders.
+  forecast_demand:
+    type: double
+    provenance: forecast
+    definition: Daily origin-time forecast passed into inventory replay.
+  actual_demand:
+    type: double
+    provenance: observed
+    definition: Recorded held-out sales used as simulation demand proxy, not uncensored
+      demand.
+  fulfilled_units:
+    type: double
+    provenance: simulated
+    definition: Minimum of available inventory and observed demand proxy.
+  lost_sales_units:
+    type: double
+    provenance: simulated
+    definition: Demand proxy minus fulfilled units; no backorders carried.
+  order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Units ordered after today's demand at a review opportunity.
+  in_transit_units:
+    type: int64
+    provenance: simulated
+    definition: All placed units still awaiting arrival at end of day, including new
+      orders.
+  closing_inventory:
+    type: double
+    provenance: simulated
+    definition: Opening units plus receipts minus fulfillment; nonnegative.
+  stockout_event:
+    type: int64
+    provenance: simulated
+    definition: 1 when any demand is lost on the item-store-day.
+  holding_cost:
+    type: double
+    provenance: simulated
+    definition: "Closing units \xD7 unit cost \xD7 annual holding rate / 365."
+  ordering_cost:
+    type: double
+    provenance: simulated
+    definition: Fixed assumed order cost if a positive order was placed, otherwise
+      zero.
+  lost_sale_cost:
+    type: double
+    provenance: simulated
+    definition: Lost units multiplied by assumed lost-sale penalty.
+  total_inventory_cost:
+    type: double
+    provenance: simulated
+    definition: Holding + ordering + lost-sale cost; excludes purchase spend and terminal
+      valuation.
+  lost_sales_value:
+    type: double
+    provenance: simulated
+    definition: Lost units valued at origin-time selling price; hypothetical revenue
+      loss.
+  estimated_unit_cost:
+    type: double
+    provenance: simulated
+    definition: Assumed cost-to-price ratio times last known price, with positive
+      floor.
+  completed_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed receipt-to-receipt replenishment cycles; first and unfinished
+      cycles excluded.
+  successful_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed cycles with no lost demand between consecutive receipts.
+inventory_simulation_kpis:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  policy:
+    type: string
+    provenance: simulated
+    definition: baseline or optimized replenishment policy.
+  scenario:
+    type: string
+    provenance: simulated
+    definition: Base or named one-factor-at-a-time sensitivity case.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  run_id:
+    type: int64
+    provenance: simulated
+    definition: Monte Carlo repeat index; average repeated worlds rather than summing.
+  actual_demand:
+    type: double
+    provenance: observed
+    definition: Recorded held-out sales used as simulation demand proxy, not uncensored
+      demand.
+  fulfilled_units:
+    type: double
+    provenance: simulated
+    definition: Minimum of available inventory and observed demand proxy.
+  lost_sales_units:
+    type: double
+    provenance: simulated
+    definition: Demand proxy minus fulfilled units; no backorders carried.
+  lost_sales_value:
+    type: double
+    provenance: simulated
+    definition: Lost units valued at origin-time selling price; hypothetical revenue
+      loss.
+  average_inventory:
+    type: double
+    provenance: simulated
+    definition: Mean end-of-day units over the replay horizon for one item-store-policy-scenario-run.
+  maximum_inventory:
+    type: double
+    provenance: simulated
+    definition: Maximum closing units during replay.
+  stockout_days:
+    type: int64
+    provenance: simulated
+    definition: Sum of item-store-days with lost demand.
+  holding_cost:
+    type: double
+    provenance: simulated
+    definition: "Closing units \xD7 unit cost \xD7 annual holding rate / 365."
+  ordering_cost:
+    type: double
+    provenance: simulated
+    definition: Fixed assumed order cost if a positive order was placed, otherwise
+      zero.
+  lost_sale_cost:
+    type: double
+    provenance: simulated
+    definition: Lost units multiplied by assumed lost-sale penalty.
+  total_inventory_cost:
+    type: double
+    provenance: simulated
+    definition: Holding + ordering + lost-sale cost; excludes purchase spend and terminal
+      valuation.
+  completed_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed receipt-to-receipt replenishment cycles; first and unfinished
+      cycles excluded.
+  successful_cycles:
+    type: int64
+    provenance: simulated
+    definition: Completed cycles with no lost demand between consecutive receipts.
+  days:
+    type: int64
+    provenance: simulated
+    definition: Number of replay dates for the KPI row.
+  fill_rate:
+    type: double
+    provenance: simulated
+    definition: Fulfilled units / demand proxy; null for zero demand.
+  cycle_service_level:
+    type: double
+    provenance: simulated
+    definition: Successful completed cycles / completed cycles; null if none completed.
+  inventory_turnover:
+    type: double
+    provenance: simulated
+    definition: Annualized fulfilled units / average inventory; unit proxy, not financial
+      COGS turnover.
+  baseline_cost:
+    type: double
+    provenance: simulated
+    definition: Paired baseline total cost at the same item-store-service-scenario-run.
+  baseline_lost_sales_value:
+    type: double
+    provenance: simulated
+    definition: Paired baseline unfulfilled units valued at origin price.
+  estimated_cost_reduction:
+    type: double
+    provenance: simulated
+    definition: Baseline cost minus current policy cost; negative means worse scenario
+      cost.
+  estimated_revenue_protected:
+    type: double
+    provenance: simulated
+    definition: Baseline lost-sales value minus current policy lost-sales value; scenario
+      only.
+m5_by_category_id:
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_department_id:
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_event_name:
+  event_name:
+    type: string
+    provenance: observed
+    definition: First source calendar event name; nullable.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_item_id:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_month:
+  month:
+    type: int64
+    provenance: derived
+    definition: "Calendar month 1\u201312."
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_snap_flag:
+  snap_flag:
+    type: int64
+    provenance: observed
+    definition: Source state-specific SNAP eligibility indicator, 0 or 1; not a promotion
+      flag.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_state_id:
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_store_id:
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+m5_by_weekday:
+  weekday:
+    type: int64
+    provenance: derived
+    definition: Calendar weekday with Sunday=0, Monday=1, Saturday=6.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  mean_series_day_units:
+    type: double
+    provenance: derived
+    definition: Mean recorded demand over item-store-day observations in a group.
+  series_days:
+    type: int64
+    provenance: derived
+    definition: Number of item-store-day observations in the summary denominator.
+price_demand_association:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  price_change_demand_correlation:
+    type: double
+    provenance: derived
+    definition: Pearson correlation of daily percentage price change and recorded
+      units; descriptive, not causal.
+product_store_performance:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  average_daily_demand:
+    type: double
+    provenance: derived
+    definition: Trailing 90-day pre-origin recorded-sales mean for an item-store.
+  demand_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of trailing 90-day recorded sales.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  zero_demand_share:
+    type: double
+    provenance: derived
+    definition: Fraction of trailing item-store days with zero recorded sales.
+  last_price:
+    type: double
+    provenance: derived
+    definition: Most recent non-null price known at the summary or forecast origin.
+  abc:
+    type: string
+    provenance: derived
+    definition: 'Revenue concentration class using prior cumulative share: A <80%,
+      B <95%, C remainder.'
+  coefficient_of_variation:
+    type: double
+    provenance: derived
+    definition: Sample demand standard deviation / mean; null for zero mean.
+  xyz:
+    type: string
+    provenance: derived
+    definition: Variability class based on configured CV thresholds; high zero frequency
+      forces Z.
+  abc_xyz:
+    type: string
+    provenance: derived
+    definition: Concatenated ABC and XYZ planning segment, e.g. A-X.
+  volume_segment:
+    type: string
+    provenance: derived
+    definition: Low/medium/high thirds of training mean-demand percentile rank.
+  cumulative_revenue_share:
+    type: double
+    provenance: derived
+    definition: Running revenue contribution in descending revenue order, including
+      current pair.
+recommendations:
+  domain:
+    type: string
+    provenance: derived
+    definition: M5 or DataCo; domains must never be combined as one retailer.
+  evidence_type:
+    type: string
+    provenance: derived
+    definition: Historical, forecast evaluation, or simulated scenario evidence category.
+  recommendation:
+    type: string
+    provenance: derived
+    definition: Proposed action inferred from computed metrics; requires operational
+      validation.
+  evidence:
+    type: string
+    provenance: derived
+    definition: Calculated metric and denominator supporting the proposed action.
+  source_table:
+    type: string
+    provenance: derived
+    definition: Exact analytical table containing the evidence for the recommendation.
+  data_provenance:
+    type: string
+    provenance: derived
+    definition: synthetic_fixture or kaggle; never substitute one for the other.
+refresh_metadata:
+  last_refresh_utc:
+    type: string
+    provenance: derived
+    definition: UTC timestamp captured after result generation, not current viewing
+      time.
+  data_provenance:
+    type: string
+    provenance: derived
+    definition: synthetic_fixture or kaggle; never substitute one for the other.
+  mode:
+    type: string
+    provenance: derived
+    definition: Configured sample or full execution scope.
+sales_daily:
+  series_id:
+    type: string
+    provenance: observed
+    definition: M5 source series identifier including source split suffix.
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  d:
+    type: string
+    provenance: observed
+    definition: M5 day label d_N joined to calendar.
+  date:
+    type: date32[day]
+    provenance: observed
+    definition: Calendar date represented by the observation or prediction.
+  date_key:
+    type: int32
+    provenance: derived
+    definition: Integer YYYYMMDD key derived from calendar date.
+  units_sold:
+    type: int64
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  sell_price:
+    type: double
+    provenance: observed
+    definition: M5 listed weekly item-store selling price, source currency per unit.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  wm_yr_wk:
+    type: int64
+    provenance: observed
+    definition: M5 retail calendar week identifier.
+  weekday:
+    type: int64
+    provenance: derived
+    definition: Calendar weekday with Sunday=0, Monday=1, Saturday=6.
+  month:
+    type: int64
+    provenance: derived
+    definition: "Calendar month 1\u201312."
+  quarter:
+    type: int64
+    provenance: derived
+    definition: "Calendar quarter 1\u20134."
+  event_name:
+    type: string
+    provenance: observed
+    definition: First source calendar event name; nullable.
+  event_type:
+    type: string
+    provenance: observed
+    definition: First source calendar event type; nullable.
+  event_name_2:
+    type: string
+    provenance: observed
+    definition: Second source calendar event name; nullable.
+  event_type_2:
+    type: string
+    provenance: observed
+    definition: Second source calendar event type; nullable.
+  snap_flag:
+    type: int64
+    provenance: observed
+    definition: Source state-specific SNAP eligibility indicator, 0 or 1; not a promotion
+      flag.
+  event_flag:
+    type: int32
+    provenance: derived
+    definition: 1 if either source event is present on the date.
+  weekend_flag:
+    type: int32
+    provenance: derived
+    definition: 1 for Saturday/Sunday, otherwise 0.
+  month_start_flag:
+    type: int32
+    provenance: derived
+    definition: 1 on the first calendar day of a month.
+  month_end_flag:
+    type: int32
+    provenance: derived
+    definition: 1 on the last calendar day of a month.
+  zero_sales_flag:
+    type: int32
+    provenance: derived
+    definition: 1 if recorded units_sold equals zero.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  year:
+    type: int64
+    provenance: derived
+    definition: Calendar year.
+sales_monthly:
+  period:
+    type: timestamp[us]
+    provenance: derived
+    definition: Start date of the displayed daily, weekly or monthly aggregate.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+sales_trend:
+  period:
+    type: timestamp[us]
+    provenance: derived
+    definition: Start date of the displayed daily, weekly or monthly aggregate.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+sales_weekly:
+  period:
+    type: timestamp[us]
+    provenance: derived
+    definition: Start date of the displayed daily, weekly or monthly aggregate.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+stockout_risk:
+  item_id:
+    type: string
+    provenance: observed
+    definition: M5 item natural key; not a DataCo product identifier.
+  store_id:
+    type: string
+    provenance: observed
+    definition: M5 store natural key.
+  category_id:
+    type: string
+    provenance: observed
+    definition: M5 category natural key.
+  department_id:
+    type: string
+    provenance: observed
+    definition: M5 department natural key.
+  state_id:
+    type: string
+    provenance: observed
+    definition: M5 state code CA, TX or WI.
+  average_daily_demand:
+    type: double
+    provenance: derived
+    definition: Trailing 90-day pre-origin recorded-sales mean for an item-store.
+  demand_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of trailing 90-day recorded sales.
+  revenue:
+    type: double
+    provenance: derived
+    definition: M5 recorded units times weekly price; zero-unit rows have zero revenue
+      even with no price.
+  units_sold:
+    type: double
+    provenance: observed
+    definition: M5 recorded sales units; availability-censored demand is possible.
+  zero_demand_share:
+    type: double
+    provenance: derived
+    definition: Fraction of trailing item-store days with zero recorded sales.
+  last_price:
+    type: double
+    provenance: derived
+    definition: Most recent non-null price known at the summary or forecast origin.
+  supplier_id:
+    type: string
+    provenance: simulated
+    definition: SIM_ plus M5 category; illustrative supplier group, never real Walmart
+      supplier.
+  average_lead_time_days:
+    type: int64
+    provenance: simulated
+    definition: Assumed expected replenishment lead time in days.
+  lead_time_standard_deviation:
+    type: double
+    provenance: simulated
+    definition: Assumed lead-time standard deviation in days.
+  ordering_cost_per_order:
+    type: double
+    provenance: simulated
+    definition: Assumed fixed currency cost each time a purchase order is placed.
+  annual_holding_cost_rate:
+    type: double
+    provenance: simulated
+    definition: Annual holding cost as fraction of assumed unit cost.
+  estimated_unit_cost:
+    type: double
+    provenance: simulated
+    definition: Assumed cost-to-price ratio times last known price, with positive
+      floor.
+  target_service_level:
+    type: double
+    provenance: simulated
+    definition: Scenario cycle-service target in (0,1); does not equal fill rate.
+  initial_inventory:
+    type: int64
+    provenance: simulated
+    definition: Assumed opening on-hand units before first simulation demand.
+  review_period_days:
+    type: int64
+    provenance: simulated
+    definition: Number of calendar days between ordering reviews.
+  lost_sale_penalty:
+    type: double
+    provenance: simulated
+    definition: Assumed cost per unfulfilled unit; not guaranteed lost revenue.
+  minimum_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Smallest nonzero purchase quantity before pack rounding.
+  case_pack_size:
+    type: int64
+    provenance: simulated
+    definition: Order quantities must be integer multiples of this positive unit count.
+  assumption_type:
+    type: string
+    provenance: simulated
+    definition: Explicit simulated_not_walmart provenance label.
+  seed:
+    type: int64
+    provenance: simulated
+    definition: Fixed pseudo-random seed for reproducible assumption generation.
+  forecast_daily_demand:
+    type: double
+    provenance: forecast
+    definition: Mean predicted daily units over the planning horizon.
+  forecast_error_std:
+    type: double
+    provenance: derived
+    definition: Sample standard deviation of pre-test selected-model forecast residuals
+      per item-store.
+  as_of_date:
+    type: timestamp[ns]
+    provenance: derived
+    definition: Snapshot date at which an inventory recommendation was generated.
+  safety_stock:
+    type: double
+    provenance: simulated
+    definition: Normal-approximation lead-time buffer units based on assumed service
+      level.
+  expected_lead_time_demand:
+    type: double
+    provenance: simulated
+    definition: Forecast daily mean multiplied by mean lead days.
+  reorder_point:
+    type: double
+    provenance: simulated
+    definition: Expected lead-time demand plus lead-time safety stock; continuous-review
+      reference.
+  protection_safety_stock:
+    type: double
+    provenance: simulated
+    definition: Safety units covering lead time plus periodic review interval.
+  order_up_to_level:
+    type: double
+    provenance: simulated
+    definition: Forecast mean times lead-plus-review days plus protection safety stock.
+  eoq:
+    type: double
+    provenance: simulated
+    definition: "Square root of 2 \xD7 annualized units \xD7 fixed ordering cost /\
+      \ annual per-unit holding cost."
+  days_of_supply:
+    type: double
+    provenance: simulated
+    definition: Assumed initial inventory / forecast daily mean; undefined for zero
+      mean.
+  inventory_value:
+    type: double
+    provenance: simulated
+    definition: Assumed initial stock multiplied by estimated unit cost.
+  demand_uncertainty_std:
+    type: double
+    provenance: simulated
+    definition: Forecast-error SD used for inventory policy, falling back to raw demand
+      SD if unavailable.
+  stockout_probability:
+    type: double
+    provenance: simulated
+    definition: Normal lead-time demand tail above initial stock assuming no initial
+      incoming POs.
+  recommended_order_quantity:
+    type: int64
+    provenance: simulated
+    definition: Larger of EOQ or target shortage, rounded to MOQ/case pack, zero if
+      no shortage.
+  excess_units:
+    type: double
+    provenance: simulated
+    definition: Positive initial inventory above protection order-up-to target.
+  excess_value:
+    type: double
+    provenance: simulated
+    definition: Excess units multiplied by estimated unit cost.

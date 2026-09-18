@@ -1,0 +1,166 @@
+{
+  "queries": [
+    {
+      "query": 1,
+      "result_rows": 20
+    },
+    {
+      "query": 2,
+      "result_rows": 20
+    },
+    {
+      "query": 3,
+      "result_rows": 2
+    },
+    {
+      "query": 4,
+      "result_rows": 2
+    },
+    {
+      "query": 5,
+      "result_rows": 12
+    },
+    {
+      "query": 6,
+      "result_rows": 12
+    },
+    {
+      "query": 7,
+      "result_rows": 14400
+    },
+    {
+      "query": 8,
+      "result_rows": 24
+    },
+    {
+      "query": 9,
+      "result_rows": 12
+    },
+    {
+      "query": 10,
+      "result_rows": 24
+    },
+    {
+      "query": 11,
+      "result_rows": 24
+    },
+    {
+      "query": 12,
+      "result_rows": 14400
+    },
+    {
+      "query": 13,
+      "result_rows": 12
+    },
+    {
+      "query": 14,
+      "result_rows": 10
+    },
+    {
+      "query": 15,
+      "result_rows": 10
+    },
+    {
+      "query": 16,
+      "result_rows": 20
+    },
+    {
+      "query": 17,
+      "result_rows": 0
+    },
+    {
+      "query": 18,
+      "result_rows": 2
+    },
+    {
+      "query": 19,
+      "result_rows": 2
+    },
+    {
+      "query": 20,
+      "result_rows": 2
+    },
+    {
+      "query": 21,
+      "result_rows": 2
+    },
+    {
+      "query": 22,
+      "result_rows": 86
+    },
+    {
+      "query": 23,
+      "result_rows": 1
+    },
+    {
+      "query": 24,
+      "result_rows": 2
+    },
+    {
+      "query": 25,
+      "result_rows": 4
+    },
+    {
+      "query": 26,
+      "result_rows": 28
+    },
+    {
+      "query": 27,
+      "result_rows": 13
+    },
+    {
+      "query": 28,
+      "result_rows": 1
+    }
+  ],
+  "quality": [
+    [
+      "invalid_service",
+      0
+    ],
+    [
+      "invalid_late_rate",
+      0
+    ],
+    [
+      "forecast_alignment",
+      0
+    ],
+    [
+      "invalid_intervals",
+      0
+    ],
+    [
+      "negative_prices",
+      0
+    ],
+    [
+      "pii_columns",
+      0
+    ],
+    [
+      "negative_sales_units",
+      0
+    ],
+    [
+      "invalid_fulfillment",
+      0
+    ],
+    [
+      "sales_date_key_mismatch",
+      0
+    ],
+    [
+      "inventory_balance",
+      0
+    ],
+    [
+      "sales_orphan_product",
+      0
+    ],
+    [
+      "sales_orphan_date",
+      0
+    ]
+  ]
+}

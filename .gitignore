@@ -1,0 +1,17 @@
+.venv/
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+data/raw/**
+!data/raw/**/
+!data/raw/**/.gitkeep
+data/interim/**
+data/processed/**
+data/powerbi/**
+!data/**/.gitkeep
+*.duckdb*
+*.log
+kaggle.json
+.DS_Store

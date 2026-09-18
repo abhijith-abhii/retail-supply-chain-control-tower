@@ -1,0 +1,73 @@
+{
+  "filename": "sell_prices.csv",
+  "rows": 3708,
+  "columns": 4,
+  "column_stats": {
+    "store_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 3
+    },
+    "item_id": {
+      "dtypes": [
+        "object"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": null,
+      "maximum": null,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": null,
+      "unique_values": 12
+    },
+    "wm_yr_wk": {
+      "dtypes": [
+        "int64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 1000.0,
+      "maximum": 1102.0,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 103
+    },
+    "sell_price": {
+      "dtypes": [
+        "float64"
+      ],
+      "missing": 0,
+      "negative": 0,
+      "zero": 0,
+      "minimum": 2.7,
+      "maximum": 10.4,
+      "invalid_dates": 0,
+      "date_min": null,
+      "date_max": null,
+      "outliers_iqr_sample": 0,
+      "unique_values": 12
+    }
+  },
+  "duplicate_rows": 0,
+  "encoding": "utf-8",
+  "replacement_character_count": 0,
+  "peak_chunk_memory_bytes": 471048,
+  "file_size_bytes": 102625,
+  "outlier_method": "1.5 IQR on first 10,000 rows per numeric column; descriptive screen, not removal"
+}
