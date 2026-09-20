@@ -12,10 +12,11 @@ An executable portfolio project for data, BI, supply-chain, operations and junio
 | Review goal | Where to go |
 | --- | --- |
 | Understand the problem and design | [Project walkthrough](docs/project_walkthrough.md) · [Architecture](docs/architecture.md) |
+| Learn the code and analytical decisions | [Annotated study guide](docs/project-explained.md) · [Searchable HTML guide](docs/project-explained.html) |
 | Review recorded execution evidence | [Validation status](reports/validation_status.md) |
 | Run the project locally | [Installation](#installation) · [Synthetic demo](#run-the-self-contained-integration-demo) |
 | Understand data and analytical caveats | [Data dictionary](docs/data_dictionary.md) · [Methodology](reports/methodology.md) · [Limitations](reports/assumptions_and_limitations.md) |
-| Choose the next task | [Portfolio & Project Delivery board](https://github.com/users/madhurag123/projects/1) (private) |
+| Choose the next task | [Next milestones](#next-milestones) |
 
 ### Implemented and pending
 
@@ -61,12 +62,18 @@ Python 3.11+; Pandas/NumPy; DuckDB and Parquet; PostgreSQL with SQLAlchemy/psyco
 ## Repository
 See docs/repository_tree.txt for the complete tree. The source modules separate ingestion, validation, transformation, forecasting, inventory and operations. SQL files 00–09 create and validate the dimensional serving model; interview_queries.sql contains 28 analytical queries. Six notebooks explore exported outputs. Power BI files contain the model, measure catalogue, theme and six-page design. Reports distinguish actual observations, forecasts and scenario estimates. Docs include architecture, field dictionary, interview answers and resume bullets.
 
+## Detailed project and code explanation
+
+The [annotated study guide](docs/project-explained.md) explains the business questions, analysis choices, assumptions and limitations, then maps explanations to the source line numbers. It covers 69 files, including Python, SQL, configuration, notebook code cells and all 46 DAX measures. Related lines are grouped when they form one calculation or query.
+
+For a searchable version, download [project-explained.html](docs/project-explained.html) and open it in your browser; it works offline without installing anything. GitHub displays HTML source rather than running this page. Both guides document executable source snapshot `0b85891`; later documentation changes do not alter those code references.
+
 ## Installation
 
 Clone with an account that has access, then run commands from the repository root:
 
 ```bash
-git clone https://github.com/madhurag123/retail-supply-chain-control-tower.git
+git clone https://github.com/abhijithviswanathan/retail-supply-chain-control-tower.git
 cd retail-supply-chain-control-tower
 ```
 
@@ -135,7 +142,7 @@ Run the demo before `pytest`. Tests cover contracts, unique keys, DataCo order g
 Obtain real stock/PO/cost/lead-time feeds, use availability-adjusted demand, extend intermittent-demand methods and hierarchical reconciliation, calibrate segment-level intervals, add larger simulation runs and burn-in, and implement model drift/freshness alerts. DataCo delay/profit relationships and event associations are not causal attribution. Full M5 scale and native Power BI execution need separate validation.
 
 ## Portfolio and interviews
-Use docs/project_walkthrough.md, docs/interview_prep.md and docs/resume_bullets.md. Claim what you actually ran and built. Replace metric placeholders only with real executed source results. Do not upload raw Kaggle files; .gitignore excludes raw and generated analytical folders and secrets. To publish code, initialize a private/local Git repository, review staged files, then add your own GitHub remote; the project repository is https://github.com/madhurag123/retail-supply-chain-control-tower.
+Use docs/project_walkthrough.md, docs/interview_prep.md and docs/resume_bullets.md. Claim what you actually ran and built. Replace metric placeholders only with real executed source results. Do not upload raw Kaggle files; .gitignore excludes raw and generated analytical folders and secrets. To publish code, initialize a private/local Git repository, review staged files, then add your own GitHub remote; the project repository is https://github.com/abhijithviswanathan/retail-supply-chain-control-tower.
 
 ## Optional GitHub automated checks
 The inactive template is `docs/github-actions-ci.yml.example`. Automatic CI is not enabled. To enable it deliberately, copy the template to `.github/workflows/ci.yml` and commit it; it runs the fixture pipeline and PostgreSQL tests on pushes and pull requests. GitHub Actions usage is subject to your account limits.
