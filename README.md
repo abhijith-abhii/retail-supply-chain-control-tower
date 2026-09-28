@@ -28,7 +28,7 @@ python -m pip install -r requirements-dashboard.txt
 python app.py
 ```
 
-Open **http://127.0.0.1:8080**. Keep the process running. Set `PORT` to use another port (Retention Studio uses `--port`). The Python development servers are intended for local demonstrations.
+Open **http://127.0.0.1:8080**. Keep the process running. Set `PORT` to use another port. The Python development servers are intended for local demonstrations.
 
 The pre-existing forecasting/SQL pipeline and its original dependency file are preserved in this repository. See [pipeline documentation](README_PIPELINE.md). The browser dashboard above has a smaller, independent dependency file. Native Power BI and real-source Kaggle analysis are not claimed as completed.
 
@@ -52,7 +52,7 @@ Stack: Python · SQLite · browser.
 python -m pytest -q tests/test_dashboard.py tests/test_api.py
 ```
 
-See [VERIFICATION.md](VERIFICATION.md) for actual executed checks, setup verification, model/data results and any outstanding environment limitations. A workflow file alone is not evidence that CI passed.
+See [VERIFICATION.md](VERIFICATION.md) for actual executed checks, setup verification, model/data results and any outstanding environment limitations. The [recorded CI runs](reports/ci-verification.json) passed for the linked source revision.
 
 ## Data and attribution
 
