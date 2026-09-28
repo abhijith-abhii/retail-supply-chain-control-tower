@@ -73,7 +73,7 @@ For a searchable version, download [project-explained.html](docs/project-explain
 Clone with an account that has access, then run commands from the repository root:
 
 ```bash
-git clone https://github.com/abhijithviswanathan/retail-supply-chain-control-tower.git
+git clone https://github.com/abhijith-abhii/retail-supply-chain-control-tower.git
 cd retail-supply-chain-control-tower
 ```
 
@@ -142,7 +142,7 @@ Run the demo before `pytest`. Tests cover contracts, unique keys, DataCo order g
 Obtain real stock/PO/cost/lead-time feeds, use availability-adjusted demand, extend intermittent-demand methods and hierarchical reconciliation, calibrate segment-level intervals, add larger simulation runs and burn-in, and implement model drift/freshness alerts. DataCo delay/profit relationships and event associations are not causal attribution. Full M5 scale and native Power BI execution need separate validation.
 
 ## Portfolio and interviews
-Use docs/project_walkthrough.md, docs/interview_prep.md and docs/resume_bullets.md. Claim what you actually ran and built. Replace metric placeholders only with real executed source results. Do not upload raw Kaggle files; .gitignore excludes raw and generated analytical folders and secrets. To publish code, initialize a private/local Git repository, review staged files, then add your own GitHub remote; the project repository is https://github.com/abhijithviswanathan/retail-supply-chain-control-tower.
+Use docs/project_walkthrough.md, docs/interview_prep.md and docs/resume_bullets.md. Claim what you actually ran and built. Replace metric placeholders only with real executed source results. Do not upload raw Kaggle files; .gitignore excludes raw and generated analytical folders and secrets. To publish code, initialize a private/local Git repository, review staged files, then add your own GitHub remote; the project repository is https://github.com/abhijith-abhii/retail-supply-chain-control-tower.
 
 ## Optional GitHub automated checks
 The inactive template is `docs/github-actions-ci.yml.example`. Automatic CI is not enabled. To enable it deliberately, copy the template to `.github/workflows/ci.yml` and commit it; it runs the fixture pipeline and PostgreSQL tests on pushes and pull requests. GitHub Actions usage is subject to your account limits.
