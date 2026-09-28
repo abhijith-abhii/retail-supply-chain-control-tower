@@ -1,0 +1,9 @@
+{
+  "slug": "retail-supply-chain-control-tower",
+  "fresh_venv": "work/clean-envs/retail-supply-chain-control-tower",
+  "fresh_checkout": "work/clean/retail-supply-chain-control-tower",
+  "passed": true,
+  "failure": null,
+  "runtime": "Python 3.12.14",
+  "model_training": null
+}

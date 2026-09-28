@@ -1,0 +1,61 @@
+{
+  "bars": [
+    {
+      "label": "2016-01",
+      "value": 13431.79
+    },
+    {
+      "label": "2016-02",
+      "value": 12644.41
+    },
+    {
+      "label": "2016-03",
+      "value": 14053.67
+    },
+    {
+      "label": "2016-04",
+      "value": 12980.57
+    }
+  ],
+  "chart_title": "Selected revenue by month",
+  "details": {
+    "definitions": {
+      "late": "actual shipping days > scheduled days; distinct orders",
+      "profit": "sum of source line benefit",
+      "revenue": "sum of source line totals"
+    },
+    "filters": {},
+    "late_orders": 117,
+    "order_count": 240,
+    "privacy": "Explicit ingestion column allowlist; names, emails and password test columns excluded",
+    "profit_usd": 2435.5119827570284,
+    "revenue_usd": 53110.436788634564,
+    "selected_lines": 484,
+    "source_rows": 484
+  },
+  "metrics": {
+    "Late order share": "48.8%",
+    "Orders": 240,
+    "Profit": "$2,435.51",
+    "Revenue": "$53,110.44"
+  },
+  "notice": "Synthetic operational analysis. Profit excludes costs absent from the source. Filtering to a category or segment changes the observed cohort; these are descriptive comparisons.",
+  "rows": [
+    {
+      "Category Name": "Synthetic Category 0",
+      "lines": 330,
+      "margin_pct": 4.2,
+      "profit_usd": 1558.65,
+      "revenue_usd": 37125.38,
+      "units": 660
+    },
+    {
+      "Category Name": "Synthetic Category 1",
+      "lines": 154,
+      "margin_pct": 5.49,
+      "profit_usd": 876.87,
+      "revenue_usd": 15985.06,
+      "units": 308
+    }
+  ]
+}
